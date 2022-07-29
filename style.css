@@ -1,0 +1,118 @@
+body {
+    background: white;
+}
+
+header {
+    background-color: white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+#navbarNav {
+    font-size: 1.2rem;
+}
+
+ul li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.accordion,
+#accordionExample,
+.accordion-item,
+.accordion-header,
+.accordion-button,
+.accordion-button:focus,
+.accordion-button:not(.collapsed) {
+    width: auto;
+    border: none;
+    box-shadow: none;
+}
+
+
+button:focus:not(:focus-visible) {
+    z-index: 1000;
+}
+
+header li a,
+.accordion-button {
+    color: black !important;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: white;
+}
+
+.accordion-button {
+    height: auto;
+}
+
+
+.accordion-button:not(.collapsed)::after,
+.accordion-button::after {
+    margin-left: 10px;
+}
+
+
+@media (min-width: 992px) {
+
+    header li a {
+        font-family: 'Nunito';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .header-productos-mobile {
+        display: none;
+    }
+
+    .menuNav {
+        display: flex;
+        justify-content: space-around;
+        width: 40%;
+    }
+}
+
+
+@media (max-width: 992px) {
+
+    header li a {
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    header li a {
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    .header-productos-desktop {
+        display: none;
+    }
+
+    .menuNav {
+        margin-top: 1rem;
+    }
+
+    .menuNav a {
+        margin-top: 1rem;
+    }
+
+    .accordion-button {
+        padding: 8px;
+    }
+
+    .links-subMenu:hover {
+        color: #4F70A3 !important;
+    }
+
+}
