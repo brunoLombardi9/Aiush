@@ -57,6 +57,9 @@ header li a,
     margin-left: 10px;
 }
 
+.links-subMenu:hover, .nav-link:hover {
+    color: #4F70A3 !important;
+}
 
 @media (min-width: 992px) {
 
@@ -82,12 +85,14 @@ header li a,
 
 @media (max-width: 992px) {
 
-    header li a {
+    header li a , .accordion-button{
         font-family: 'Lato';
         font-style: normal;
         font-weight: 400;
-        font-size: 16px;
+        font-size: 16px !important;
         line-height: 19px;
+        width: 80px;
+        text-align: center;
     }
 
     header li a {
@@ -108,11 +113,7 @@ header li a,
     }
 
     .accordion-button {
-        padding: 8px;
-    }
-
-    .links-subMenu:hover {
-        color: #4F70A3 !important;
+        padding: 7px;
     }
 
 }
