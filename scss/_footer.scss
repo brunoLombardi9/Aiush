@@ -1,0 +1,26 @@
+footer {
+    height: 15vh;
+    background-color: $colorGeneral;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+footer a,
+footer a:hover {
+    color: white;
+    margin-right: 20px;
+    font-family: Nunito;
+}
+
+@media (max-width: 992px) {
+    footer {
+        height: 10vh;
+    }
+}
+
+@media (min-width: 992px) {
+    footer a {
+        margin-top: 50px;
+    }
+}

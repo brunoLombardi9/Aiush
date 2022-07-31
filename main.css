@@ -1,3 +1,9 @@
+body {
+  height: 100vh; }
+
+main {
+  height: 100%; }
+
 /*!
    * Bootstrap  v5.2.0 (https://getbootstrap.com/)
    * Copyright 2011-2022 The Bootstrap Authors
@@ -8368,6 +8374,29 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important; } }
 
+.bi-whatsapp {
+  height: 30px;
+  width: 30px;
+  background-color: #2bb641;
+  color: white; }
+
+.contenedorWhatsapp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  height: 50px;
+  width: 50px;
+  background-color: #2bb641;
+  border-radius: 100px; }
+
+@media (max-width: 992px) {
+  .contenedorWhatsapp {
+    bottom: 60px;
+    right: 10px; } }
+
 body {
   background: white; }
 
@@ -8412,8 +8441,42 @@ header li a,
 .accordion-button::after {
   margin-left: 10px; }
 
-.links-subMenu:hover, .nav-link:hover {
+.links-subMenu:hover,
+.nav-link:hover {
   color: #4F70A3 !important; }
+
+.navbar-toggler {
+  border: none; }
+
+.navbar-toggler:focus {
+  box-shadow: none;
+  border: none; }
+
+.bi-facebook,
+.contenedorInstagram {
+  color: #A5ADD4;
+  height: 40px;
+  width: 40px; }
+
+.contenedorInstagram {
+  height: 40px;
+  width: 40px;
+  background-color: #A5ADD4;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.bi-instagram {
+  color: white;
+  background-color: #A5ADD4;
+  height: 28px;
+  width: 28px; }
+
+.redesNav {
+  width: 150px;
+  display: flex;
+  justify-content: space-around; }
 
 @media (min-width: 992px) {
   header li a {
@@ -8430,6 +8493,8 @@ header li a,
     width: 40%; } }
 
 @media (max-width: 992px) {
+  .redesNav {
+    display: none; }
   header li a,
   .accordion-button {
     font-family: 'Lato';
@@ -8450,3 +8515,24 @@ header li a,
     margin-top: 1rem; }
   .accordion-button {
     padding: 7px; } }
+
+footer {
+  height: 15vh;
+  background-color: #4F70A3;
+  display: flex;
+  justify-content: end;
+  align-items: center; }
+
+footer a,
+footer a:hover {
+  color: white;
+  margin-right: 20px;
+  font-family: Nunito; }
+
+@media (max-width: 992px) {
+  footer {
+    height: 10vh; } }
+
+@media (min-width: 992px) {
+  footer a {
+    margin-top: 50px; } }
