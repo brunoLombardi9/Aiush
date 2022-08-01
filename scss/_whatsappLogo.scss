@@ -1,11 +1,11 @@
-.bi-whatsapp{
+.bi-whatsapp {
     height: 30px;
     width: 30px;
     background-color: $colorWhatsapp;
     color: white;
 }
 
-.contenedorWhatsapp{
+.contenedorWhatsapp {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,11 +18,22 @@
     border-radius: 100px;
 }
 
-@media (max-width: 992px){
+.contenedorWhatsapp:hover {
+    background-color: $colorWhatsappHover;
+    color: $colorWhatsappHover;
 
-.contenedorWhatsapp{
-    bottom: 60px;
-    right: 10px;
+    .bi-whatsapp {
+        color: white;
+        background-color: $colorWhatsappHover;
+    }
 }
-    
+
+
+@media (max-width: 992px) {
+
+    .contenedorWhatsapp {
+        bottom: 60px;
+        right: 10px;
+    }
+
 }

@@ -8377,7 +8377,7 @@ textarea.form-control-lg {
 .bi-whatsapp {
   height: 30px;
   width: 30px;
-  background-color: #2bb641;
+  background-color: #9BC9A8;
   color: white; }
 
 .contenedorWhatsapp {
@@ -8389,8 +8389,15 @@ textarea.form-control-lg {
   right: 40px;
   height: 50px;
   width: 50px;
-  background-color: #2bb641;
+  background-color: #9BC9A8;
   border-radius: 100px; }
+
+.contenedorWhatsapp:hover {
+  background-color: #2bb641;
+  color: #2bb641; }
+  .contenedorWhatsapp:hover .bi-whatsapp {
+    color: white;
+    background-color: #2bb641; }
 
 @media (max-width: 992px) {
   .contenedorWhatsapp {
@@ -8456,13 +8463,13 @@ header li a,
 .contenedorInstagram {
   color: #A5ADD4;
   height: 40px;
-  width: 40px; }
+  width: 40px;
+  border-radius: 100px; }
 
 .contenedorInstagram {
   height: 40px;
   width: 40px;
   background-color: #A5ADD4;
-  border-radius: 100px;
   display: flex;
   justify-content: center;
   align-items: center; }
@@ -8472,6 +8479,16 @@ header li a,
   background-color: #A5ADD4;
   height: 28px;
   width: 28px; }
+
+.contenedorInstagram:hover {
+  background-color: #4F70A3;
+  color: #4F70A3; }
+  .contenedorInstagram:hover .bi-instagram {
+    color: white;
+    background-color: #4F70A3; }
+
+.bi-facebook:hover {
+  color: #4F70A3; }
 
 .redesNav {
   width: 150px;
