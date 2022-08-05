@@ -3,10 +3,11 @@ body{
 }
 
 main{
-    height: 100%;
+    min-height: 100%;
 }
 
 $colorGeneral: #4F70A3;
 $colorWhatsappHover: #2bb641;
 $colorWhatsapp: #9BC9A8;
 $colorRedes: #A5ADD4;
+$primary: $colorGeneral;
