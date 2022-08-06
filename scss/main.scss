@@ -3,3 +3,123 @@
 @import "_whatsappLogo";
 @import "_header";
 @import "_footer";
+
+.hero {
+    background-color: #A5ADD4;
+    // background-image: url("../assets/logoaiush1.png");
+    height: 630px;
+  
+    // background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+                  
+      /* box modeling */
+      padding: 50px 0px;
+      margin-bottom: 0px;
+}
+.hero h2 {
+    font-family: $fontTitles;
+	font-size: 400%;
+	font-weight: 900;
+	font-style: normal;
+    color: #f1f1f1;
+    text-align: left;
+    margin-left: 5%;
+    margin-top: 2em;
+    text-transform: uppercase;
+}
+.hero p {
+    font-family: $font;
+    font-size: 1.1em;
+    font-weight: 400;
+    font-style: normal;
+    color: #f1f1f1;
+    text-align: left;
+    margin-left: 5%;
+    margin-right: 70%;
+
+}
+
+.caracter h3 {
+    font-family: $font;
+	font-size: 1em;
+	font-weight: 600;
+	font-style: normal;
+    color: #0e0e0e;
+}
+.caracter {
+    margin-top: 3%;
+    margin-left: 5%;
+    margin-right: 5%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 3%;
+    grid-gap: 10px;
+}
+.car {
+    width: 100%;
+    height: 100%;
+    align-content: center;
+}
+
+.prod h4 {
+    font-family: $fontTitles;
+	font-size: 150%;
+	font-weight: 700;
+	font-style: normal;
+    color: #0e0e0e;
+    text-align: left;
+    margin-left: 5%;
+    margin-top: 2em;
+    text-transform: uppercase;
+}
+.productos {
+    margin-top: 3%;
+    margin-left: 5%;
+    margin-right: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: #f1f1f1;
+}
+.destacados {
+    text-decoration:none;
+    font-family: $fontTitles;
+	font-size: 1.2em;
+	font-weight: 300;
+	font-style: normal;
+    padding: 5em 7em 5em 7em;
+    color: #f1f1f1;
+    background-color: #a1a1a1;
+}
+
+.boton__secundario{
+    text-decoration:none;
+    font-family: $font;
+	font-size: 1em;
+	font-weight: 400;
+	font-style: normal;
+    color: #0e0e0e;
+    margin-top: 3%;
+    margin-left: 3%;
+    display: flex;
+    justify-content: center;
+}
+.boton__secundario:hover{
+    text-decoration: none;
+    font-weight: 600;
+    font-style: bold;
+    color: #A5ADD4;
+}
+
+
+
+
+/*VISTA MOBILE*/
+@media only screen and (max-width: 767.98px){
+    /*INDEX*/
+    .productos{
+        flex-direction: column;
+    }    
+}
