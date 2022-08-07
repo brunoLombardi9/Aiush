@@ -8621,7 +8621,7 @@ form .form-control {
     padding-top: 40px;
     margin-top: 2rem; } }
 
-.seccionesProductos h1, .seccionesProductos .h1 {
+#seccionesProductos h1, #seccionesProductos .h1 {
   font-family: 'Nunito';
   font-style: normal;
   font-weight: 700;
@@ -8630,7 +8630,7 @@ form .form-control {
   text-align: center;
   margin-right: 80px; }
 
-.seccionesProductos p {
+#seccionesProductos p {
   font-family: 'Lato';
   font-style: normal;
   font-weight: 400;
@@ -8639,9 +8639,13 @@ form .form-control {
   transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
   cursor: pointer; }
 
-.seccionesProductos p:hover {
+#seccionesProductos p:hover {
   color: #4F70A3;
   transform: scale(1.02); }
 
-.seccionesProductos {
+#seccionesProductos {
   flex-direction: column; }
+
+.contenedorProductos {
+  justify-content: space-between;
+  align-items: center; }

@@ -1,4 +1,4 @@
-.seccionesProductos h1 {
+#seccionesProductos h1 {
     font-family: 'Nunito';
     font-style: normal;
     font-weight: 700;
@@ -8,7 +8,7 @@
     margin-right: 80px;
 }
 
-.seccionesProductos p {
+#seccionesProductos p {
     font-family: 'Lato';
     font-style: normal;
     font-weight: 400;
@@ -18,11 +18,16 @@
     cursor: pointer;
 }
 
-.seccionesProductos p:hover {
+#seccionesProductos p:hover {
     color: $colorGeneral;
     transform: scale(1.02);
 }
 
-.seccionesProductos {
+#seccionesProductos {
     flex-direction: column;
+}
+
+.contenedorProductos {
+    justify-content: space-between;
+    align-items: center;
 }
