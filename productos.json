@@ -1,0 +1,43 @@
+ [
+    {
+         "nombre": "Agenda modelo Epu",
+         "categoria": "Agendas",
+         "imagenes": ["assets/"]
+     },
+     {
+         "nombre": "",
+         "categoria": "",
+         "imagenes": []
+     },
+     {
+         "nombre": "",
+         "categoria": "",
+         "imagenes": []
+     }
+     ,
+     {
+         "nombre": "",
+         "categoria": "",
+         "imagenes": []
+     },
+     {
+         "nombre": "",
+         "categoria": "",
+         "imagenes": []
+     },
+     {
+         "nombre": "",
+         "categoria": "",
+         "imagenes": []
+     },
+     {
+         "nombre": "",
+         "categoria": "",
+         "imagenes": []
+     },
+     {
+         "nombre": "",
+         "categoria": "",
+         "imagenes": []
+     }
+ ]
