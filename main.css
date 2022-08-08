@@ -8650,6 +8650,12 @@ form .form-control {
   justify-content: space-between;
   align-items: center; }
 
+.cardProducto {
+  transition: 0.5s; }
+
+.cardProducto:hover {
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1); }
+
 @media (max-width: 576px) {
   .cardProducto {
     width: 50%; } }

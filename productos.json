@@ -1,43 +1,103 @@
- [
+[
     {
-         "nombre": "Agenda modelo Epu",
-         "categoria": "Agendas",
-         "imagenes": ["assets/"]
-     },
-     {
-         "nombre": "",
-         "categoria": "",
-         "imagenes": []
-     },
-     {
-         "nombre": "",
-         "categoria": "",
-         "imagenes": []
-     }
-     ,
-     {
-         "nombre": "",
-         "categoria": "",
-         "imagenes": []
-     },
-     {
-         "nombre": "",
-         "categoria": "",
-         "imagenes": []
-     },
-     {
-         "nombre": "",
-         "categoria": "",
-         "imagenes": []
-     },
-     {
-         "nombre": "",
-         "categoria": "",
-         "imagenes": []
-     },
-     {
-         "nombre": "",
-         "categoria": "",
-         "imagenes": []
-     }
- ]
+        "nombre": "Agenda Epu",
+        "categoria": "Agendas",
+        "imagenes": [
+            "assets/Agendas/Modelo 1/Agenda modelo Epu 1.webp",
+            "assets/Agendas/Modelo 1/Agenda modelo Epu 2.webp",
+            "assets/Agendas/Modelo 1/Agenda modelo Epu 3.webp"
+        ]
+    },
+    {
+        "nombre": "Agenda Flores Vintage",
+        "categoria": "Agendas",
+        "imagenes": [
+            "assets/Agendas/Modelo 2/Agenda Modelo Flores Vintage 1.webp",
+            "assets/Agendas/Modelo 2/Agenda Modelo Flores Vintage 2.webp",
+            "assets/Agendas/Modelo 2/Agenda Modelo Flores Vintage 3.webp"
+        ]
+    },
+    {
+        "nombre": "Agenda Otoño Fantasia",
+        "categoria": "Agendas",
+        "imagenes": [
+            "assets/Agendas/Modelo 3/Agenda Modelo Otoño Fantasia 1.webp",
+            "assets/Agendas/Modelo 3/Agenda Modelo Otoño Fantasia 2.webp"
+        ]
+    },
+    {
+        "nombre": "Agenda vuela alto",
+        "categoria": "Agendas",
+        "imagenes": [
+            "assets/Agendas/Modelo 4/Agenda modelo vuela alto-01.webp",
+            "assets/Agendas/Modelo 4/Agenda modelo vuela alto-02.webp",
+            "assets/Agendas/Modelo 4/Agenda modelo vuela alto-03.webp",
+            "assets/Agendas/Modelo 4/Agenda modelo vuela alto-04.webp"
+        ]
+    },
+    {
+        "nombre": "Agenda Chalten",
+        "categoria": "Agendas",
+        "imagenes": [
+            "assets/Agendas/Modelo 5/Agenda modelo Chalten 1.webp",
+            "assets/Agendas/Modelo 5/Agenda modelo Chalten 2.webp"
+        ]
+    },
+    {
+        "nombre": "Agenda Green",
+        "categoria": "Cuadernos A5",
+        "imagenes": [
+            "assets/Cuadernos/Bosque Encantado.webp"
+        ]
+    },
+    {
+        "nombre": "Cuaderno Chalten",
+        "categoria": "Cuadernos A5",
+        "imagenes": [
+            "assets/Cuadernos/chalten 1.webp",
+            "assets/Cuadernos/chalten 2.webp"
+        ]
+    },
+    {
+        "nombre": "Cuaderno Green",
+        "categoria": "Cuadernos A5",
+        "imagenes": [
+            "assets/Cuadernos/Green.webp"
+        ]
+    },
+    {
+        "nombre": "Cuaderno Metallic",
+        "categoria": "Cuadernos A5",
+        "imagenes": [
+            "assets/Cuadernos/Metallic.webp"
+        ]
+    },
+    {
+        "nombre": "Cuaderno Pastel",
+        "categoria": "Cuadernos A5",
+        "imagenes": [
+            "assets/Cuadernos/Pastel.webp"
+        ]
+    },
+    {
+        "nombre": "Cuaderno Vintage Rose",
+        "categoria": "Cuadernos A5",
+        "imagenes": [
+            "assets/Cuadernos/Vintage Rose.webp"
+        ]
+    },
+    {
+        "nombre": "Cuaderno Vintage",
+        "categoria": "Cuadernos A5",
+        "imagenes": [
+            "assets/Cuadernos/Vintage.webp"
+        ]
+    },
+    {
+        "nombre": "Cuaderno Yellow",
+        "categoria": "Cuadernos A5",
+        "imagenes": [
+            "assets/Cuadernos/Yellow.webp"
+        ]
+    }
+]
