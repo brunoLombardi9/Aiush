@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap");
 body {
@@ -8587,26 +8588,25 @@ footer a:hover {
   margin-left: 5%;
   margin-right: 70%; }
 
+.caracter {
+  margin-top: 3%;
+  margin-left: 5%;
+  margin-right: 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; }
+
+.car {
+  width: 100%;
+  height: 100%;
+  text-align: center; }
+
 .caracter h3, .caracter .h3 {
   font-family: "Lato", sans-serif;
   font-size: 1em;
   font-weight: 600;
   font-style: normal;
   color: #0e0e0e; }
-
-.caracter {
-  margin-top: 3%;
-  margin-left: 5%;
-  margin-right: 5%;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  padding: 3%;
-  grid-gap: 10px; }
-
-.car {
-  width: 100%;
-  height: 100%;
-  align-content: center; }
 
 .prod h4, .prod .h4 {
   font-family: "Nunito", sans-serif;
@@ -8621,22 +8621,23 @@ footer a:hover {
 
 .productos {
   margin-top: 3%;
-  margin-left: 5%;
-  margin-right: 5%;
+  margin-left: 3%;
+  margin-right: 3%;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  color: #f1f1f1; }
+  justify-content: space-around; }
 
 .destacados {
+  padding: 5em 8.5em 5em 8.5em;
+  background-color: #a1a1a1; }
+
+.destacados a {
   text-decoration: none;
   font-family: "Nunito", sans-serif;
   font-size: 1.2em;
   font-weight: 300;
   font-style: normal;
-  padding: 5em 7em 5em 7em;
-  color: #f1f1f1;
-  background-color: #a1a1a1; }
+  color: #f1f1f1; }
 
 .boton__secundario {
   text-decoration: none;
@@ -8647,6 +8648,7 @@ footer a:hover {
   color: #0e0e0e;
   margin-top: 3%;
   margin-left: 3%;
+  margin-right: 3%;
   display: flex;
   justify-content: center; }
 
@@ -8655,6 +8657,19 @@ footer a:hover {
   font-weight: 600;
   font-style: bold;
   color: #A5ADD4; }
+
+.carrusel {
+  margin-top: 3%;
+  margin-left: 5%;
+  margin-right: 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; }
+
+.reseña {
+  margin: 1% 3%;
+  font-family: "Lato", sans-serif;
+  text-align: center; }
 
 /*VISTA MOBILE*/
 @media only screen and (max-width: 767.98px) {
