@@ -1,9 +1,13 @@
-body{
+body {
     height: 100vh;
 }
 
-main{
+main {
     min-height: 100%;
+}
+
+.links-subMenu {
+    cursor: pointer;
 }
 
 $colorGeneral: #4F70A3;

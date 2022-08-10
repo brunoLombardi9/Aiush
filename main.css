@@ -4,6 +4,9 @@ body {
 main {
   min-height: 100%; }
 
+.links-subMenu {
+  cursor: pointer; }
+
 /*!
    * Bootstrap  v5.2.0 (https://getbootstrap.com/)
    * Copyright 2011-2022 The Bootstrap Authors
