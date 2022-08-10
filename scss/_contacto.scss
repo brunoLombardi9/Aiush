@@ -14,8 +14,6 @@ form .form-control{
 
 #contacto {
     background-color: white;
-    padding-top: 40px;
-    margin-top: 2rem;
     margin-right: 2rem;
     margin-left: 2rem;
 }
@@ -81,5 +79,10 @@ form .form-control{
     .botonFormulario:hover{
         background-color: white;
         color: $colorGeneral;
+    }
+    
+    #contacto{
+        padding-top: 40px;
+        margin-top: 2rem;
     }
 }

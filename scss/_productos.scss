@@ -1,0 +1,48 @@
+#seccionesProductos h1 {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.7rem;
+    line-height: 49px;
+    text-align: center;
+    margin-right: 80px;
+}
+
+#seccionesProductos p {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+#seccionesProductos p:hover {
+    color: $colorGeneral;
+    transform: scale(1.02);
+}
+
+#seccionesProductos {
+    flex-direction: column;
+}
+
+.contenedorProductos {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cardProducto{
+    transition: 0.5s;
+}
+
+.cardProducto:hover{
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+
+@media (max-width: 576px){
+    .cardProducto{
+        width: 50%;
+    }
+}

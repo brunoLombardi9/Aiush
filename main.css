@@ -4,6 +4,9 @@ body {
 main {
   min-height: 100%; }
 
+.links-subMenu {
+  cursor: pointer; }
+
 /*!
    * Bootstrap  v5.2.0 (https://getbootstrap.com/)
    * Copyright 2011-2022 The Bootstrap Authors
@@ -8567,8 +8570,6 @@ form .form-control {
 
 #contacto {
   background-color: white;
-  padding-top: 40px;
-  margin-top: 2rem;
   margin-right: 2rem;
   margin-left: 2rem; }
 
@@ -8618,4 +8619,46 @@ form .form-control {
     margin-bottom: auto; }
   .botonFormulario:hover {
     background-color: white;
-    color: #4F70A3; } }
+    color: #4F70A3; }
+  #contacto {
+    padding-top: 40px;
+    margin-top: 2rem; } }
+
+#seccionesProductos h1, #seccionesProductos .h1 {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.7rem;
+  line-height: 49px;
+  text-align: center;
+  margin-right: 80px; }
+
+#seccionesProductos p {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+  cursor: pointer; }
+
+#seccionesProductos p:hover {
+  color: #4F70A3;
+  transform: scale(1.02); }
+
+#seccionesProductos {
+  flex-direction: column; }
+
+.contenedorProductos {
+  justify-content: space-between;
+  align-items: center; }
+
+.cardProducto {
+  transition: 0.5s; }
+
+.cardProducto:hover {
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1); }
+
+@media (max-width: 576px) {
+  .cardProducto {
+    width: 50%; } }
