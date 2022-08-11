@@ -1,5 +1,6 @@
 [{
         "nombre": "Agenda Epu",
+        "id": 1,
         "categoria": "Agendas",
         "imagenes": [
             "assets/Agendas/Modelo 1/Agenda modelo Epu 1.webp",
@@ -9,6 +10,7 @@
     },
     {
         "nombre": "Agenda Flores Vintage",
+        "id": 2,
         "categoria": "Agendas",
         "imagenes": [
             "assets/Agendas/Modelo 2/Agenda Modelo Flores Vintage 1.webp",
@@ -18,6 +20,7 @@
     },
     {
         "nombre": "Agenda Otoño Fantasia",
+        "id": 3,
         "categoria": "Agendas",
         "imagenes": [
             "assets/Agendas/Modelo 3/Agenda Modelo Otoño Fantasia 1.webp",
@@ -26,6 +29,7 @@
     },
     {
         "nombre": "Agenda vuela alto",
+        "id": 4,
         "categoria": "Agendas",
         "imagenes": [
             "assets/Agendas/Modelo 4/Agenda modelo vuela alto-01.webp",
@@ -36,6 +40,7 @@
     },
     {
         "nombre": "Agenda Chalten",
+        "id": 5,
         "categoria": "Agendas",
         "imagenes": [
             "assets/Agendas/Modelo 5/Agenda modelo Chalten 1.webp",
@@ -44,6 +49,7 @@
     },
     {
         "nombre": "Agenda Green",
+        "id": 6,
         "categoria": "Cuadernos A5",
         "imagenes": [
             "assets/Cuadernos/Bosque Encantado.webp"
@@ -51,6 +57,7 @@
     },
     {
         "nombre": "Cuaderno Chalten",
+        "id": 7,
         "categoria": "Cuadernos A5",
         "imagenes": [
             "assets/Cuadernos/chalten 1.webp",
@@ -59,6 +66,7 @@
     },
     {
         "nombre": "Cuaderno Green",
+        "id": 8,
         "categoria": "Cuadernos A5",
         "imagenes": [
             "assets/Cuadernos/Green.webp"
@@ -66,6 +74,7 @@
     },
     {
         "nombre": "Cuaderno Metallic",
+        "id": 9,
         "categoria": "Cuadernos A5",
         "imagenes": [
             "assets/Cuadernos/Metallic.webp"
@@ -73,6 +82,7 @@
     },
     {
         "nombre": "Cuaderno Pastel",
+        "id": 10,
         "categoria": "Cuadernos A5",
         "imagenes": [
             "assets/Cuadernos/Pastel.webp"
@@ -80,6 +90,7 @@
     },
     {
         "nombre": "Cuaderno Vintage Rose",
+        "id": 11,
         "categoria": "Cuadernos A5",
         "imagenes": [
             "assets/Cuadernos/Vintage Rose.webp"
@@ -87,6 +98,7 @@
     },
     {
         "nombre": "Cuaderno Vintage",
+        "id": 12,
         "categoria": "Cuadernos A5",
         "imagenes": [
             "assets/Cuadernos/Vintage.webp"
@@ -94,6 +106,7 @@
     },
     {
         "nombre": "Cuaderno Yellow",
+        "id": 13,
         "categoria": "Cuadernos A5",
         "imagenes": [
             "assets/Cuadernos/Yellow.webp"

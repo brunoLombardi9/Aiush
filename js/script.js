@@ -2,6 +2,7 @@ const contenedorProductos = document.querySelector('#contenedorProductos');
 const menuProductos = document.querySelectorAll('.menuProductos');
 const subMenuProductos = document.querySelectorAll('.menuProductos-subMenu');
 const linksSubmenu = document.querySelectorAll('.links-subMenu');
+const tituloModal = document.querySelector('#exampleModalLabel');
 const seccionProductos = "Aiush - Productos";
 let productos = [];
 let categoria;
@@ -19,7 +20,11 @@ function generarCard(producto) {
 
     const card = document.createElement("div");
     card.classList.add("col-lg-4", "col-sm-6", "mt-3", "mb-3", "cardProducto");
+    card.setAttribute("data-bs-toggle", "modal");
+    card.setAttribute("data-bs-target", "#exampleModal");
+    card.onclick = () => desplegarModal(producto.id);
     contenedorProductos.appendChild(card);
+
 
     const imagen = document.createElement("img");
     imagen.classList.add("img-fluid");
@@ -76,7 +81,7 @@ function traerProductos() {
                 if (categoria !== null && categoria !== undefined) {
 
                     const productosFiltrados = productos.filter(producto => {
-                        return producto.categoria === categoria
+                        return producto.categoria === categoria;
                     });
 
                     productosFiltrados.forEach(producto => {
@@ -120,4 +125,9 @@ function redirigirProductos() {
             }
         });
     });
+}
+
+function desplegarModal(id) {
+    const productoFiltrado = productos.find(producto => producto.id === id);
+    tituloModal.innerText = productoFiltrado.nombre;
 }
