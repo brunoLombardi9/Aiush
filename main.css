@@ -8580,8 +8580,8 @@ footer a:hover {
 
 .hero p {
   font-family: "Lato", sans-serif;
-  font-size: 1.1em;
-  font-weight: 400;
+  font-size: 125%;
+  font-weight: 300;
   font-style: normal;
   color: #f1f1f1;
   text-align: left;
@@ -8589,12 +8589,10 @@ footer a:hover {
   margin-right: 70%; }
 
 .caracter {
-  margin-top: 3%;
-  margin-left: 5%;
-  margin-right: 5%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around; }
+  margin: 3% 5% 0%;
+  align-items: flex-start;
+  display: grid;
+  grid-template-columns: 33% 33% 33%; }
 
 .car {
   width: 100%;
@@ -8603,8 +8601,8 @@ footer a:hover {
 
 .caracter h3, .caracter .h3 {
   font-family: "Lato", sans-serif;
-  font-size: 1em;
-  font-weight: 600;
+  font-size: 125%;
+  font-weight: 400;
   font-style: normal;
   color: #0e0e0e; }
 
@@ -8620,21 +8618,22 @@ footer a:hover {
   text-transform: uppercase; }
 
 .productos {
-  margin-top: 3%;
-  margin-left: 3%;
-  margin-right: 3%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around; }
+  margin: 3% 5% 0%;
+  align-items: flex-end;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 250px;
+  grid-gap: 3%; }
 
 .destacados {
-  padding: 5em 8.5em 5em 8.5em;
-  background-color: #a1a1a1; }
+  padding: 2em 3em;
+  background-color: #a1a1a1;
+  text-align: center; }
 
 .destacados a {
   text-decoration: none;
   font-family: "Nunito", sans-serif;
-  font-size: 1.2em;
+  font-size: 125%;
   font-weight: 300;
   font-style: normal;
   color: #f1f1f1; }
@@ -8642,13 +8641,11 @@ footer a:hover {
 .boton__secundario {
   text-decoration: none;
   font-family: "Lato", sans-serif;
-  font-size: 1em;
+  font-size: 100%;
   font-weight: 400;
   font-style: normal;
   color: #0e0e0e;
-  margin-top: 3%;
-  margin-left: 3%;
-  margin-right: 3%;
+  margin: 3%;
   display: flex;
   justify-content: center; }
 
@@ -8737,7 +8734,27 @@ footer a:hover {
   color: #0e0e0e; }
 
 /*VISTA MOBILE*/
-@media only screen and (max-width: 767.98px) {
-  /*INDEX*/
+@media only screen and (max-width: 992px) {
+  /*HOME*/
+  .hero h2, .hero .h2 {
+    font-size: 250%;
+    margin-top: 4em; }
+  .hero p {
+    font-size: 100%;
+    margin-right: 30%; }
+  .caracter h3, .caracter .h3 {
+    font-size: 100%;
+    margin-top: 2em; }
+  .prod h4, .prod .h4 {
+    font-size: 120%;
+    text-transform: none; }
   .productos {
-    flex-direction: column; } }
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin-bottom: 5em; }
+  .destacados {
+    padding: 1em 2em; }
+  .destacados a {
+    font-size: 100%; }
+  .carrusel {
+    margin-top: 2em; } }
