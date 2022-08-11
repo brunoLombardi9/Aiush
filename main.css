@@ -8715,11 +8715,10 @@ footer a:hover {
   margin-left: 5%; }
 
 .materiales {
-  margin-top: 3%;
-  margin-bottom: 5%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around; }
+  margin: 5%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 3%; }
 
 .mat {
   margin-left: 5%;
@@ -8731,6 +8730,7 @@ footer a:hover {
 
 .mat p {
   font-family: "Lato", sans-serif;
+  font-size: 105%;
   color: #0e0e0e; }
 
 /*VISTA MOBILE*/
@@ -8757,4 +8757,26 @@ footer a:hover {
   .destacados a {
     font-size: 100%; }
   .carrusel {
-    margin-top: 2em; } }
+    margin-top: 2em; }
+  /*NOSOTROS*/
+  .sobreNos {
+    margin-top: 5%; }
+  .sobreNos h5, .sobreNos .h5 {
+    font-size: 170%; }
+  .sobreNos p {
+    font-size: 100%;
+    margin-left: 5%;
+    margin-right: 5%; }
+  .videoNos h5, .videoNos .h5 {
+    font-size: 150%; }
+  .trabNos h5, .trabNos .h5 {
+    font-size: 150%; }
+  .materiales {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin: 5% 10% 30%; }
+  .mat img {
+    width: 60%;
+    height: auto; }
+  .mat p {
+    font-size: 100%; } }
