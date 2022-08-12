@@ -1,3 +1,6 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap");
 body {
   height: 100vh; }
 
@@ -8664,3 +8667,227 @@ form .form-control {
 @media (max-width: 576px) {
   .cardProducto {
     width: 50%; } }
+
+.hero {
+  background-color: #A5ADD4;
+  height: 630px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* box modeling */
+  padding: 50px 0px;
+  margin-bottom: 0px; }
+
+.hero h2, .hero .h2 {
+  font-family: "Nunito", sans-serif;
+  font-size: 400%;
+  font-weight: 900;
+  font-style: normal;
+  color: #f1f1f1;
+  text-align: left;
+  margin-left: 5%;
+  margin-top: 2em;
+  text-transform: uppercase; }
+
+.hero p {
+  font-family: "Lato", sans-serif;
+  font-size: 125%;
+  font-weight: 300;
+  font-style: normal;
+  color: #f1f1f1;
+  text-align: left;
+  margin-left: 5%;
+  margin-right: 70%; }
+
+.caracter {
+  margin: 3% 5% 0%;
+  align-items: flex-start;
+  display: grid;
+  grid-template-columns: 33% 33% 33%; }
+
+.car {
+  width: 100%;
+  height: 100%;
+  text-align: center; }
+
+.caracter h3, .caracter .h3 {
+  font-family: "Lato", sans-serif;
+  font-size: 125%;
+  font-weight: 400;
+  font-style: normal;
+  color: #0e0e0e; }
+
+.prod h4, .prod .h4 {
+  font-family: "Nunito", sans-serif;
+  font-size: 150%;
+  font-weight: 700;
+  font-style: normal;
+  color: #0e0e0e;
+  text-align: left;
+  margin-left: 5%;
+  margin-top: 2em;
+  text-transform: uppercase; }
+
+.productos {
+  margin: 3% 5% 0%;
+  align-items: flex-end;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 250px;
+  grid-gap: 3%; }
+
+.destacados {
+  padding: 2em 3em;
+  background-color: #a1a1a1;
+  text-align: center; }
+
+.destacados a {
+  text-decoration: none;
+  font-family: "Nunito", sans-serif;
+  font-size: 125%;
+  font-weight: 300;
+  font-style: normal;
+  color: #f1f1f1; }
+
+.boton__secundario {
+  text-decoration: none;
+  font-family: "Lato", sans-serif;
+  font-size: 100%;
+  font-weight: 400;
+  font-style: normal;
+  color: #0e0e0e;
+  margin: 3%;
+  display: flex;
+  justify-content: center; }
+
+.boton__secundario:hover {
+  text-decoration: none;
+  font-weight: 600;
+  font-style: bold;
+  color: #A5ADD4; }
+
+.carrusel {
+  margin: 3% 5% 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; }
+
+.reseña {
+  margin: 1% 3%;
+  font-family: "Lato", sans-serif;
+  text-align: center; }
+
+.sobreNos {
+  margin-top: 0%; }
+
+.sobreNos img {
+  width: 100%;
+  height: auto; }
+
+.sobreNos h5, .sobreNos .h5 {
+  font-family: "Nunito", sans-serif;
+  font-size: 250%;
+  font-weight: 900;
+  font-style: normal;
+  color: #0e0e0e;
+  text-align: left;
+  margin-left: 5%;
+  margin-top: 5%; }
+
+.sobreNos p {
+  font-family: "Lato", sans-serif;
+  font-size: 105%;
+  font-weight: 400;
+  font-style: normal;
+  color: #0e0e0e;
+  text-align: left;
+  margin-top: 1%;
+  margin-left: 20%;
+  margin-right: 20%; }
+
+.videoNos h5, .videoNos .h5 {
+  font-family: "Nunito", sans-serif;
+  font-size: 250%;
+  font-weight: 900;
+  font-style: normal;
+  color: #0e0e0e;
+  text-align: left;
+  margin-top: 5%;
+  text-align: center; }
+
+.trabNos h5, .trabNos .h5 {
+  font-family: "Nunito", sans-serif;
+  font-size: 200%;
+  font-weight: 900;
+  font-style: normal;
+  color: #0e0e0e;
+  text-align: left;
+  margin-top: 10%;
+  margin-left: 5%; }
+
+.materiales {
+  margin: 5%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 3%; }
+
+.mat {
+  margin-left: 5%;
+  margin-right: 5%;
+  text-align: center; }
+
+.mat img {
+  margin-bottom: 5%; }
+
+.mat p {
+  font-family: "Lato", sans-serif;
+  font-size: 105%;
+  color: #0e0e0e; }
+
+/*VISTA MOBILE*/
+@media only screen and (max-width: 992px) {
+  /*HOME*/
+  .hero h2, .hero .h2 {
+    font-size: 250%;
+    margin-top: 4em; }
+  .hero p {
+    font-size: 100%;
+    margin-right: 30%; }
+  .caracter h3, .caracter .h3 {
+    font-size: 100%;
+    margin-top: 2em; }
+  .prod h4, .prod .h4 {
+    font-size: 120%;
+    text-transform: none; }
+  .productos {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin-bottom: 5em; }
+  .destacados {
+    padding: 1em 2em; }
+  .destacados a {
+    font-size: 100%; }
+  .carrusel {
+    margin-top: 2em; }
+  /*NOSOTROS*/
+  .sobreNos {
+    margin-top: 5%; }
+  .sobreNos h5, .sobreNos .h5 {
+    font-size: 170%; }
+  .sobreNos p {
+    font-size: 100%;
+    margin-left: 5%;
+    margin-right: 5%; }
+  .videoNos h5, .videoNos .h5 {
+    font-size: 150%; }
+  .trabNos h5, .trabNos .h5 {
+    font-size: 150%; }
+  .materiales {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin: 5% 10% 30%; }
+  .mat img {
+    width: 60%;
+    height: auto; }
+  .mat p {
+    font-size: 100%; } }
