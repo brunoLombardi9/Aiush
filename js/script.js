@@ -4,6 +4,7 @@ const subMenuProductos = document.querySelectorAll('.menuProductos-subMenu');
 const linksSubmenu = document.querySelectorAll('.links-subMenu');
 const tituloModal = document.querySelector('#exampleModalLabel');
 const seccionProductos = "Aiush - Productos";
+const carrousel = document.querySelector('.carousel-inner');
 let productos = [];
 let categoria;
 
@@ -130,4 +131,25 @@ function redirigirProductos() {
 function desplegarModal(id) {
     const productoFiltrado = productos.find(producto => producto.id === id);
     tituloModal.innerText = productoFiltrado.nombre;
+
+    const imagenesCarrousel = productoFiltrado.imagenes;
+    console.log(imagenesCarrousel.length)
+
+    while (carrousel.hasChildNodes()) {
+        carrousel.removeChild(carrousel.firstChild);
+    }
+
+    for (i = 0; imagenesCarrousel.length > i; i++) {
+        const carrouselItem = document.createElement('div');
+        carrouselItem.classList.add('carousel-item');
+        if (i < 1) { carrouselItem.classList.add('active') }
+        const imagen = document.createElement('img');
+        imagen.classList.add('d-block', 'w-100');
+        imagen.src = `../${productoFiltrado.imagenes[i]}`;
+        carrouselItem.appendChild(imagen);
+        carrousel.appendChild(carrouselItem);
+    }
+
+
+
 }
