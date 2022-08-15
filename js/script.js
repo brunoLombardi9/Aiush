@@ -3,8 +3,10 @@ const menuProductos = document.querySelectorAll('.menuProductos');
 const subMenuProductos = document.querySelectorAll('.menuProductos-subMenu');
 const linksSubmenu = document.querySelectorAll('.links-subMenu');
 const tituloModal = document.querySelector('#exampleModalLabel');
+const botonesCarrousel = document.querySelectorAll('.botonesCarrousel');
 const seccionProductos = "Aiush - Productos";
 const carrousel = document.querySelector('.carousel-inner');
+const contenidoProducto = document.querySelector('.contenidoProducto');
 let productos = [];
 let categoria;
 
@@ -38,7 +40,7 @@ function filtrarPorCategoria() {
     menuProductos.forEach(opcion => {
         opcion.addEventListener('click', () => {
 
-            eliminarCards();
+            limpiarContenido(contenedorProductos);
 
             categoria = opcion.innerText;
             retenerCategoria();
@@ -51,11 +53,6 @@ function filtrarPorCategoria() {
 
 }
 
-function eliminarCards() {
-    while (contenedorProductos.hasChildNodes()) {
-        contenedorProductos.removeChild(contenedorProductos.firstChild);
-    }
-}
 
 function retenerCategoria() {
     localStorage.setItem("Categoria", JSON.stringify(categoria));
@@ -79,6 +76,24 @@ function traerProductos() {
             .then(res => productos = [...res])
             .then(productos => {
 
+
+                const imagenesAgendasTodas = productos[0].imagenesAgendasTodas;
+                const imagenesCuadernosLibretasTodas = productos[0].imagenesCuadernosLibretasTodas;
+
+                productos.forEach(producto => {
+                    if (producto.categoria === "Agendas") {
+                        imagenesAgendasTodas.forEach(imagen => {
+                            producto.imagenes.push(imagen);
+                        })
+                    }
+                    if (producto.categoria === "Cuadernos A5" || producto.categoria === "Libretas") {
+                        imagenesCuadernosLibretasTodas.forEach(imagen => {
+                            producto.imagenes.push(imagen);
+                        })
+                    }
+                });
+
+
                 if (categoria !== null && categoria !== undefined) {
 
                     const productosFiltrados = productos.filter(producto => {
@@ -92,7 +107,9 @@ function traerProductos() {
 
                 } else {
                     productos.forEach(producto => {
-                        generarCard(producto);
+                        if (producto.id !== 0) {
+                            generarCard(producto);
+                        }
                     });
 
                 }
@@ -133,16 +150,21 @@ function desplegarModal(id) {
     tituloModal.innerText = productoFiltrado.nombre;
 
     const imagenesCarrousel = productoFiltrado.imagenes;
-    console.log(imagenesCarrousel.length)
 
-    while (carrousel.hasChildNodes()) {
-        carrousel.removeChild(carrousel.firstChild);
+    if (imagenesCarrousel.length === 1) {
+        botonesCarrousel.forEach(boton => boton.classList.add('d-none'));
+    } else {
+        botonesCarrousel.forEach(boton => boton.classList.remove('d-none'));
     }
+
+    // descripcionProducto(productoFiltrado);
+
+    limpiarContenido(carrousel);
 
     for (i = 0; imagenesCarrousel.length > i; i++) {
         const carrouselItem = document.createElement('div');
         carrouselItem.classList.add('carousel-item');
-        if (i < 1) { carrouselItem.classList.add('active') }
+        if (i === 0) { carrouselItem.classList.add('active') }
         const imagen = document.createElement('img');
         imagen.classList.add('d-block', 'w-100');
         imagen.src = `../${productoFiltrado.imagenes[i]}`;
@@ -150,6 +172,18 @@ function desplegarModal(id) {
         carrousel.appendChild(carrouselItem);
     }
 
+}
+
+function limpiarContenido(nodelist) {
+    while (nodelist.hasChildNodes()) {
+        nodelist.removeChild(nodelist.firstChild);
+    }
+}
+
+function descripcionProducto(producto){
+    
+    const descripciones = productos[0].descripcionLapices;
 
 
+    contenidoProducto.innerText = descripciones;
 }

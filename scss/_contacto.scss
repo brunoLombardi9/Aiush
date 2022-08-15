@@ -61,25 +61,14 @@ form .form-control{
 }
 
 @media (max-width: 768px){
-    .formulario{
-        background-color: $colorGeneral;
-        margin-bottom: 2rem;
-
-    }
 
     .botonFormulario{
-        background-color: white;
-        color: black;
         border-radius: 100px;
         width: 80%;
         margin-top: auto;
         margin-bottom: auto;
     }
     
-    .botonFormulario:hover{
-        background-color: white;
-        color: $colorGeneral;
-    }
     
     #contacto{
         padding-top: 40px;

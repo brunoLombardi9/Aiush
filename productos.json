@@ -1,5 +1,21 @@
 [
-
+    {
+        "id": 0,
+        "imagenesAgendasTodas": [
+            "assets/Imagenes para todas las agendas/Aiush imagenes producto_Mesa de trabajo 1.webp",
+            "assets/Imagenes para todas las agendas/Aiush imagenes producto-02.webp",
+            "assets/Imagenes para todas las agendas/Aiush imagenes producto-03.webp",
+            "assets/Imagenes para todas las agendas/Aiush imagenes producto-04.webp",
+            "assets/Imagenes para todas las agendas/Aiush imagenes producto-05.webp",
+            "assets/Imagenes para todas las agendas/Interior agendas-02.webp",
+            "assets/Imagenes para todas las agendas/Interior agendas-04.webp"
+        ],
+        "imagenesCuadernosLibretasTodas": [
+            "assets/Imagenes para todos los cuadernos y libretas/Aiush imagenes producto_Mesa de trabajo 1.webp"
+        ],
+        "descripcionLapices": "Lápices de madera natural, con semillas cubiertas en cápsulas de origen vegetal.\n Las semillas pueden ser aleatoriamente de: rúcula, albahaca, zanahoria, perejil o de flores como zinnias, caléndulas o amapolas.",
+        "descripcionLibretas": "Interior: Lisos, rayados o punteados.\n Realizadas con papel Eco-sustentable, 100% fibra de caña de azúcar, 0% fibra de árbol y 0% blanqueadores químicos. Color natural ahuesado de 80 gr. Impresión con tintas eco-solventes, no liberan COV (compuestos orgánicos volátiles) hacia la atmósfera.Que no tienen olor alguno, y los líquidos solventes usados en su composición son 100% biodegradables. Libretas tamaño A5 o A6, tapa de papel de 300 gramos laminado, 40 hojas defibra de caña de azúcar, cosidas."
+    },
     {
         "nombre": "Agenda Epu",
         "id": 1,
@@ -112,6 +128,114 @@
         "categoria": "Cuadernos A5",
         "imagenes": [
             "assets/Cuadernos/Yellow.webp"
+        ]
+    },
+    {
+        "nombre": "Libreta Chalten",
+        "id": 14,
+        "categoria": "Libretas",
+        "imagenes": [
+            "assets/Libretas/Chalten.webp"
+        ]
+    },
+    {
+        "nombre": "Libreta Flores Azules",
+        "id": 15,
+        "categoria": "Libretas",
+        "imagenes": [
+            "assets/Libretas/Flores Azules.webp",
+            "assets/Libretas/Flores Azules 2.webp"
+        ]
+    },
+    {
+        "nombre": "Libreta Flores fantasia",
+        "id": 16,
+        "categoria": "Libretas",
+        "imagenes": [
+            "assets/Libretas/Flores fantasia.webp"
+        ]
+    },
+    {
+        "nombre": "Libreta Flores rojas",
+        "id": 17,
+        "categoria": "Libretas",
+        "imagenes": [
+            "assets/Libretas/Flores rojas 1.webp",
+            "assets/Libretas/Flores rojas 2.webp"
+        ]
+    },
+    {
+        "nombre": "Libreta Mendoza",
+        "id": 18,
+        "categoria": "Libretas",
+        "imagenes": [
+            "assets/Libretas/Mendoza 2.webp"
+        ]
+    },
+    {
+        "nombre": "Libreta Norte",
+        "id": 19,
+        "categoria": "Libretas",
+        "imagenes": [
+            "assets/Libretas/Norte 1.webp",
+            "assets/Libretas/Norte 2.webp"
+        ]
+    },
+    {
+        "nombre": "Libreta Otoño celeste",
+        "id": 20,
+        "categoria": "Libretas",
+        "imagenes": [
+            "assets/Libretas/Otoño celeste.webp"
+        ]
+    },
+    {
+        "nombre": "Libreta Otoño verde",
+        "id": 21,
+        "categoria": "Libretas",
+        "imagenes": [
+            "assets/Libretas/Otoño verde.webp"
+        ]
+    },
+    {
+        "nombre": "Libreta Otoño vintage",
+        "id": 22,
+        "categoria": "Libretas",
+        "imagenes": [
+            "assets/Libretas/Otoño Vintage.webp"
+        ]
+    },
+    {
+        "nombre": "Lapices plantables",
+        "id": 23,
+        "categoria": "Lapices plantables",
+        "imagenes": [
+            "assets/Lapices/Lapices-04.webp",
+            "assets/Lapices/Lapices-05.webp",
+            "assets/Lapices/Lapices_Mesa de trabajo 1.webp",
+            "assets/Lapices/Lapices-02.webp",
+            "assets/Lapices/Lapices-03.webp"
+        ]
+    },
+    {
+        "nombre": "Señaladores",
+        "id": 24,
+        "categoria": "Señaladores",
+        "imagenes": [
+            "assets/Señaladores/Pack por 3.webp",
+            "assets/Señaladores/Señalador 1.webp",
+            "assets/Señaladores/Señalador 2.webp",
+            "assets/Señaladores/Señalador 3.webp",
+            "assets/Señaladores/Señalador 5.webp",
+            "assets/Señaladores/Señalador atras.webp"
+        ]
+    },
+    {
+        "nombre": "Stickers",
+        "id": 25,
+        "categoria": "Stickers",
+        "imagenes": [
+            "assets/Stickers/feedstickers.webp"
         ]
     }
 ]
