@@ -1,20 +1,30 @@
-[
-    {
+[{
         "id": 0,
-        "imagenesAgendasTodas": [
-            "assets/Imagenes para todas las agendas/Aiush imagenes producto_Mesa de trabajo 1.webp",
-            "assets/Imagenes para todas las agendas/Aiush imagenes producto-02.webp",
-            "assets/Imagenes para todas las agendas/Aiush imagenes producto-03.webp",
-            "assets/Imagenes para todas las agendas/Aiush imagenes producto-04.webp",
-            "assets/Imagenes para todas las agendas/Aiush imagenes producto-05.webp",
-            "assets/Imagenes para todas las agendas/Interior agendas-02.webp",
-            "assets/Imagenes para todas las agendas/Interior agendas-04.webp"
-        ],
-        "imagenesCuadernosLibretasTodas": [
-            "assets/Imagenes para todos los cuadernos y libretas/Aiush imagenes producto_Mesa de trabajo 1.webp"
-        ],
-        "descripcionLapices": "Lápices de madera natural, con semillas cubiertas en cápsulas de origen vegetal.\n Las semillas pueden ser aleatoriamente de: rúcula, albahaca, zanahoria, perejil o de flores como zinnias, caléndulas o amapolas.",
-        "descripcionLibretas": "Interior: Lisos, rayados o punteados.\n Realizadas con papel Eco-sustentable, 100% fibra de caña de azúcar, 0% fibra de árbol y 0% blanqueadores químicos. Color natural ahuesado de 80 gr. Impresión con tintas eco-solventes, no liberan COV (compuestos orgánicos volátiles) hacia la atmósfera.Que no tienen olor alguno, y los líquidos solventes usados en su composición son 100% biodegradables. Libretas tamaño A5 o A6, tapa de papel de 300 gramos laminado, 40 hojas defibra de caña de azúcar, cosidas."
+        "imagenesComunes": {
+            "imagenesAgendasTodas": [
+                "assets/Imagenes para todas las agendas/Aiush imagenes producto_Mesa de trabajo 1.webp",
+                "assets/Imagenes para todas las agendas/Aiush imagenes producto-02.webp",
+                "assets/Imagenes para todas las agendas/Aiush imagenes producto-03.webp",
+                "assets/Imagenes para todas las agendas/Aiush imagenes producto-04.webp",
+                "assets/Imagenes para todas las agendas/Aiush imagenes producto-05.webp",
+                "assets/Imagenes para todas las agendas/Interior agendas-02.webp",
+                "assets/Imagenes para todas las agendas/Interior agendas-04.webp"
+            ],
+            "imagenesCuadernosLibretasTodas": [
+                "assets/Imagenes para todos los cuadernos y libretas/Aiush imagenes producto_Mesa de trabajo 1.webp"
+            ]
+        },
+
+        "descripciones": {
+            "lapicesPlantables": ["Lápices de madera natural, con semillas cubiertas en cápsulas de origen vegetal.", "Las semillas pueden ser aleatoriamente de: rúcula, albahaca, zanahoria, perejil o de flores como zinnias , caléndulas o amapolas."],
+            "libretas": ["Interior: Lisos, rayados o punteados", "Realizadas con papel Eco-sustentable, 100% fibra de caña de azúcar, 0% fibra de árbol y 0% blanqueadores químicos. Color natural ahuesado de 80 gr.", "Impresión con tintas eco-solventes, no liberan COV (compuestos orgánicos volátiles) hacia la atmósfera.Que no tienen olor alguno, y los líquidos solventes usados en su composición son 100% biodegradables.", "Libretas tamaño A5 o A6, tapa de papel de 300 gramos laminado, 40 hojas de fibra de caña de azúcar, cosidas."],
+            "agendas": ["Realizadas con papel Eco-sustentable, 100% fibra de caña de azúcar, 0% fibra de árbol y 0% blanqueadores químicos. Color natural ahuesado de 80 gr.", "Impresión con tintas eco-solventes, no liberan COV (compuestos orgánicos volátiles) hacia la atmósfera.Que no tienen olor alguno, y los líquidos solventes usados en su composición son 100% biodegradables.", "Cuadernos tamaño A5, tapa dura hecha de cartón reciclado, forrado y laminadopara mayor durabilidad, 90 hojas de fibra de caña de azúcar, cosidas."],
+            "cuadernos": ["Interior: Lisos, rayados o punteados", "Realizadas con papel Eco-sustentable, 100% fibra de caña de azúcar, 0% fibra de árbol y 0% blanqueadores químicos. Color natural ahuesado de 80 gr.", "Impresión con tintas eco-solventes, no liberan COV (compuestos orgánicos volátiles) hacia la atmósfera.Que no tienen olor alguno, y los líquidos solventes usados en su composición son 100% biodegradables.", "Cuadernos tamaño A5, tapa dura hecha de cartón reciclado, forrado y laminado para mayor durabilidad, 90 hojas de fibra de caña de azúcar, cosidas."],
+            "stickers": ["Libres de ácido y de plástico, de acabado mate , papel obra 210 gramos. Adhesivo a base de almidón."],
+            "señaladores": ["Realizadas con papel reciclado, contienen semillas y están impresas con tinta eco-solventes para que luego del uso puedas plantar el papel."]
+
+        }
+
     },
     {
         "nombre": "Agenda Epu",

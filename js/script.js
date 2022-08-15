@@ -42,12 +42,14 @@ function filtrarPorCategoria() {
 
             limpiarContenido(contenedorProductos);
 
+            const productosFiltrados = productos.filter(producto => producto.categoria === opcion.innerText);
+            productosFiltrados.forEach(producto => generarCard(producto));
+
             categoria = opcion.innerText;
             retenerCategoria();
 
-            const productosFiltrados = productos.filter(producto => producto.categoria === opcion.innerText);
-            productosFiltrados.forEach(producto => generarCard(producto));
         });
+
     });
 
 
@@ -77,8 +79,8 @@ function traerProductos() {
             .then(productos => {
 
 
-                const imagenesAgendasTodas = productos[0].imagenesAgendasTodas;
-                const imagenesCuadernosLibretasTodas = productos[0].imagenesCuadernosLibretasTodas;
+                const imagenesAgendasTodas = productos[0].imagenesComunes.imagenesAgendasTodas;
+                const imagenesCuadernosLibretasTodas = productos[0].imagenesComunes.imagenesCuadernosLibretasTodas;
 
                 productos.forEach(producto => {
                     if (producto.categoria === "Agendas") {
@@ -157,14 +159,16 @@ function desplegarModal(id) {
         botonesCarrousel.forEach(boton => boton.classList.remove('d-none'));
     }
 
-    // descripcionProducto(productoFiltrado);
+    descripcionProducto(productoFiltrado);
 
     limpiarContenido(carrousel);
 
     for (i = 0; imagenesCarrousel.length > i; i++) {
         const carrouselItem = document.createElement('div');
         carrouselItem.classList.add('carousel-item');
-        if (i === 0) { carrouselItem.classList.add('active') }
+        if (i === 0) {
+            carrouselItem.classList.add('active')
+        }
         const imagen = document.createElement('img');
         imagen.classList.add('d-block', 'w-100');
         imagen.src = `../${productoFiltrado.imagenes[i]}`;
@@ -180,10 +184,46 @@ function limpiarContenido(nodelist) {
     }
 }
 
-function descripcionProducto(producto){
-    
-    const descripciones = productos[0].descripcionLapices;
+function descripcionProducto(producto) {
+
+    limpiarContenido(contenidoProducto);
+
+    // const tituloDescripcion = document.createElement('h2');
+    // tituloDescripcion.innerText = producto.nombre;
+    // tituloDescripcion.classList.add('text-align-center');
+    // contenidoProducto.appendChild(tituloDescripcion)
+
+    let descripciones;
+
+    switch (producto.categoria) {
+        case "Lapices plantables":
+            descripciones = productos[0].descripciones.lapicesPlantables;
+            break;
+        case "Libretas":
+            descripciones = productos[0].descripciones.libretas;
+            break;
+        case "Agendas":
+            descripciones = productos[0].descripciones.agendas;
+            break;
+        case "Cuadernos A5":
+            descripciones = productos[0].descripciones.cuadernos;
+            break;
+        case "Stickers":
+            descripciones = productos[0].descripciones.stickers;
+            break;
+        case "Señaladores":
+            descripciones = productos[0].descripciones.señaladores;
+            break;
+    }
+
+    descripciones.forEach(texto => {
+        const parrafo = document.createElement('p');
+        parrafo.innerText = texto;
+
+        contenidoProducto.appendChild(parrafo);
+    })
 
 
-    contenidoProducto.innerText = descripciones;
+
+
 }
