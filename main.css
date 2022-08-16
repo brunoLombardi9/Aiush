@@ -10,6 +10,9 @@ main {
 .links-subMenu {
   cursor: pointer; }
 
+.opcionSeleccionada {
+  font-weight: bold !important; }
+
 /*!
    * Bootstrap  v5.2.0 (https://getbootstrap.com/)
    * Copyright 2011-2022 The Bootstrap Authors
@@ -8499,7 +8502,8 @@ header li a,
 .redesNav {
   width: 150px;
   display: flex;
-  justify-content: space-around; }
+  justify-content: space-around;
+  margin-left: 70px; }
 
 @media (min-width: 992px) {
   header li a {
@@ -8560,7 +8564,7 @@ footer a:hover {
   footer a {
     margin-top: 50px; } }
 
-.formulario {
+#formulario {
   background-color: white;
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -8603,7 +8607,7 @@ form .form-control {
   border-radius: 100px;
   background-color: white; }
 
-.formulario textarea, .formulario input {
+#formulario textarea, #formulario input {
   border-radius: 5px; }
 
 .botonFormulario {

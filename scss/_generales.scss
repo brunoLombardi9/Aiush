@@ -15,6 +15,10 @@ main {
     cursor: pointer;
 }
 
+.opcionSeleccionada{
+    font-weight: bold !important;
+}
+
 $colorGeneral: #4F70A3;
 $colorWhatsappHover: #2bb641;
 $colorWhatsapp: #9BC9A8;

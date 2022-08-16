@@ -33,21 +33,40 @@ function generarCard(producto) {
     imagen.classList.add("img-fluid");
     imagen.src = `../${producto.imagenes[0]}`;
     card.appendChild(imagen);
+
 }
 
 function filtrarPorCategoria() {
+
+    menuProductos.forEach(opcion => {
+        categoria === opcion.innerText ? 
+            opcion.classList.add('opcionSeleccionada') :
+            opcion.classList.remove('opcionSeleccionada') ;
+        
+    })
 
     menuProductos.forEach(opcion => {
         opcion.addEventListener('click', () => {
 
             limpiarContenido(contenedorProductos);
 
-            const productosFiltrados = productos.filter(producto => producto.categoria === opcion.innerText);
-            productosFiltrados.forEach(producto => generarCard(producto));
+            if (opcion.innerText === "Todos los productos") {
+                const todosLosProductos = productos.filter(producto => producto.id !== 0);
+                todosLosProductos.forEach(producto => generarCard(producto));
 
-            categoria = opcion.innerText;
-            retenerCategoria();
+                categoria = null,
+                    retenerCategoria();
+            } else {
 
+                const productosFiltrados = productos.filter(producto => producto.categoria === opcion.innerText);
+                productosFiltrados.forEach(producto => generarCard(producto));
+
+                categoria = opcion.innerText;
+                retenerCategoria();
+            }
+
+                opcion.classList.add('opcionSeleccionada');
+  
         });
 
     });
@@ -153,11 +172,10 @@ function desplegarModal(id) {
 
     const imagenesCarrousel = productoFiltrado.imagenes;
 
-    if (imagenesCarrousel.length === 1) {
-        botonesCarrousel.forEach(boton => boton.classList.add('d-none'));
-    } else {
+    imagenesCarrousel.length === 1 ?
+        botonesCarrousel.forEach(boton => boton.classList.add('d-none')) :
         botonesCarrousel.forEach(boton => boton.classList.remove('d-none'));
-    }
+
 
     descripcionProducto(productoFiltrado);
 
@@ -187,11 +205,6 @@ function limpiarContenido(nodelist) {
 function descripcionProducto(producto) {
 
     limpiarContenido(contenidoProducto);
-
-    // const tituloDescripcion = document.createElement('h2');
-    // tituloDescripcion.innerText = producto.nombre;
-    // tituloDescripcion.classList.add('text-align-center');
-    // contenidoProducto.appendChild(tituloDescripcion)
 
     let descripciones;
 
