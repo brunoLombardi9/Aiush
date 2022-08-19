@@ -8559,22 +8559,22 @@ footer a:hover {
 .hero {
   background-color: #A5ADD4;
   height: 630px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  /* box modeling */
-  padding: 50px 0px;
-  margin-bottom: 0px; }
+  padding: 50px 0px; }
+
+.heroCont {
+  display: grid;
+  grid-template-columns: 35% 60%;
+  margin-left: 5%; }
 
 .hero h2, .hero .h2 {
   font-family: "Nunito", sans-serif;
   font-size: 400%;
   font-weight: 900;
   font-style: normal;
-  color: #f1f1f1;
+  color: #ffffff;
   text-align: left;
   margin-left: 5%;
-  margin-top: 2em;
+  margin-top: 3em;
   text-transform: uppercase; }
 
 .hero p {
@@ -8582,13 +8582,18 @@ footer a:hover {
   font-size: 125%;
   font-weight: 300;
   font-style: normal;
-  color: #f1f1f1;
+  color: #ffffff;
   text-align: left;
-  margin-left: 5%;
-  margin-right: 70%; }
+  margin-left: 5%; }
+
+.heroCont img {
+  width: 60%;
+  height: auto;
+  margin-top: 10%;
+  margin-left: 25%; }
 
 .caracter {
-  margin: 3% 5% 0%;
+  margin: 5% 5%;
   align-items: flex-start;
   display: grid;
   grid-template-columns: 33% 33% 33%; }
@@ -8596,7 +8601,10 @@ footer a:hover {
 .car {
   width: 100%;
   height: 100%;
-  text-align: center; }
+  display: grid;
+  grid-template-columns: 20% 70%;
+  align-items: center;
+  grid-gap: 3%; }
 
 .caracter h3, .caracter .h3 {
   font-family: "Lato", sans-serif;
@@ -8604,6 +8612,9 @@ footer a:hover {
   font-weight: 400;
   font-style: normal;
   color: #0e0e0e; }
+
+.car img {
+  margin: auto; }
 
 .prod h4, .prod .h4 {
   font-family: "Nunito", sans-serif;
@@ -8625,8 +8636,6 @@ footer a:hover {
   grid-gap: 3%; }
 
 .destacados {
-  padding: 2em 3em;
-  background-color: #a1a1a1;
   text-align: center; }
 
 .destacados a {
@@ -8636,6 +8645,10 @@ footer a:hover {
   font-weight: 300;
   font-style: normal;
   color: #f1f1f1; }
+
+.destacados img {
+  width: 50%;
+  height: auto; }
 
 .boton__secundario {
   text-decoration: none;
@@ -8664,7 +8677,7 @@ footer a:hover {
   padding: 3% 15%; }
 
 .sobreNos {
-  margin-top: 0%; }
+  margin-top: 3%; }
 
 .sobreNos img {
   width: 100%;
@@ -8691,6 +8704,10 @@ footer a:hover {
   margin-left: 20%;
   margin-right: 20%; }
 
+.videoNos {
+  margin-top: 10%;
+  text-align: center; }
+
 .videoNos h5, .videoNos .h5 {
   font-family: "Nunito", sans-serif;
   font-size: 250%;
@@ -8698,8 +8715,16 @@ footer a:hover {
   font-style: normal;
   color: #0e0e0e;
   text-align: left;
-  margin-top: 5%;
   text-align: center; }
+
+.videoNos img {
+  width: 75%;
+  height: auto;
+  margin-left: 5%;
+  margin-right: 5%; }
+
+.trabNos {
+  margin-top: 10%; }
 
 .trabNos h5, .trabNos .h5 {
   font-family: "Nunito", sans-serif;
@@ -8708,7 +8733,6 @@ footer a:hover {
   font-style: normal;
   color: #0e0e0e;
   text-align: left;
-  margin-top: 10%;
   margin-left: 5%; }
 
 .materiales {
@@ -8723,7 +8747,9 @@ footer a:hover {
   text-align: center; }
 
 .mat img {
-  margin-bottom: 5%; }
+  margin-bottom: 5%;
+  width: 85%;
+  height: auto; }
 
 .mat p {
   font-family: "Lato", sans-serif;
@@ -8733,15 +8759,34 @@ footer a:hover {
 /*VISTA MOBILE*/
 @media only screen and (max-width: 992px) {
   /*HOME*/
+  .heroCont {
+    display: grid;
+    grid-template-columns: 65% 35%;
+    margin-left: 3%; }
   .hero h2, .hero .h2 {
     font-size: 250%;
-    margin-top: 4em; }
+    margin-top: 2.5em; }
   .hero p {
-    font-size: 100%;
-    margin-right: 30%; }
+    font-size: 100%; }
+  .heroCont img {
+    width: 150%;
+    height: auto;
+    margin-top: 21em;
+    margin-left: -60%; }
   .caracter h3, .caracter .h3 {
-    font-size: 100%;
-    margin-top: 2em; }
+    font-size: 80%;
+    text-align: center; }
+  .car img {
+    width: 70%;
+    height: auto;
+    margin-bottom: 1%; }
+  .car {
+    margin-top: 2em;
+    margin-bottom: 2em;
+    display: grid;
+    grid-template-columns: none;
+    align-items: flex-start;
+    grid-gap: 0%; }
   .prod h4, .prod .h4 {
     font-size: 120%;
     text-transform: none; }
@@ -8759,7 +8804,7 @@ footer a:hover {
     font-size: 90%; }
   /*NOSOTROS*/
   .sobreNos {
-    margin-top: 5%; }
+    margin-top: 10%; }
   .sobreNos h5, .sobreNos .h5 {
     font-size: 170%; }
   .sobreNos p {
