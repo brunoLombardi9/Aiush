@@ -36,40 +36,47 @@ function generarCard(producto) {
 
 }
 
-function filtrarPorCategoria() {
-
+function resaltarOpciones() {
     menuProductos.forEach(opcion => {
-        categoria === opcion.innerText ? 
-            opcion.classList.add('opcionSeleccionada') :
-            opcion.classList.remove('opcionSeleccionada') ;
-        
+        if (opcion.innerText === categoria || opcion.innerText === "Todos los productos" && categoria === "Todos") {
+            opcion.classList.add('opcionSeleccionada');
+        } else {
+            opcion.classList.remove('opcionSeleccionada');
+        }
     })
+}
+
+function filtrarPorCategoria() {
 
     menuProductos.forEach(opcion => {
         opcion.addEventListener('click', () => {
 
-            limpiarContenido(contenedorProductos);
+            if (document.title === seccionProductos) {
+                limpiarContenido(contenedorProductos)
+            }
 
-            if (opcion.innerText === "Todos los productos") {
+            if (opcion.innerText === "Todos los productos" || opcion.innerText === "Productos") {
                 const todosLosProductos = productos.filter(producto => producto.id !== 0);
                 todosLosProductos.forEach(producto => generarCard(producto));
 
-                categoria = null,
-                    retenerCategoria();
+                categoria = "Todos";
             } else {
 
                 const productosFiltrados = productos.filter(producto => producto.categoria === opcion.innerText);
                 productosFiltrados.forEach(producto => generarCard(producto));
 
                 categoria = opcion.innerText;
-                retenerCategoria();
             }
 
-                opcion.classList.add('opcionSeleccionada');
-  
+            retenerCategoria();
+
+            resaltarOpciones();
+
         });
 
+
     });
+
 
 
 }
@@ -83,7 +90,7 @@ function retenerCategoria() {
 function comprobarCategoria() {
     JSON.parse(localStorage.getItem("Categoria")) !== null ?
         categoria = JSON.parse(localStorage.getItem("Categoria")) :
-        categoria = null;
+        categoria = "Todos";
 }
 
 
@@ -125,8 +132,17 @@ function traerProductos() {
                         generarCard(producto);
                     });
 
+                    resaltarOpciones();
+                }
+                if (categoria === "Todos") {
 
-                } else {
+                    menuProductos.forEach(producto => {
+                        if (producto.innerText === "Todos los productos") {
+                            producto.classList.add('opcionSeleccionada');
+                        }
+                    });
+
+
                     productos.forEach(producto => {
                         if (producto.id !== 0) {
                             generarCard(producto);
@@ -152,15 +168,18 @@ function redirigirProductos() {
 
     linksSubmenu.forEach(link => {
         link.addEventListener('click', () => {
-            categoria = link.innerText;
+            if (link.innerText === "Todos los productos" || link.innerText === "Productos") {
+                categoria = "Todos";
+            } else {
+                categoria = link.innerText;
+            }
+
             retenerCategoria();
 
-            if (document.title === "Aiush") {
+            if (document.title === "Aiush - Home") {
                 window.location.href = "secciones/productos.html";
-            } else if (document.title !== seccionProductos) {
+            } else if (document.title !== seccionProductos ) {
                 window.location.href = "./productos.html";
-            } else if (document.title === seccionProductos) {
-                filtrarPorCategoria();
             }
         });
     });
@@ -185,7 +204,7 @@ function desplegarModal(id) {
         const carrouselItem = document.createElement('div');
         carrouselItem.classList.add('carousel-item');
         if (i === 0) {
-            carrouselItem.classList.add('active')
+            carrouselItem.classList.add('active');
         }
         const imagen = document.createElement('img');
         imagen.classList.add('d-block', 'w-100');
@@ -234,7 +253,7 @@ function descripcionProducto(producto) {
         parrafo.innerText = texto;
 
         contenidoProducto.appendChild(parrafo);
-    })
+    });
 
 
 

@@ -7,6 +7,9 @@ header {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
 }
 
+.navbar-toggler {
+    padding: 0;
+}
 
 #navbarNav {
     font-size: 1.2rem;
@@ -33,7 +36,6 @@ a {
     box-shadow: none;
 }
 
-
 button:focus:not(:focus-visible) {
     z-index: 1000;
 }
@@ -55,6 +57,15 @@ header li a,
 .accordion-button:not(.collapsed)::after,
 .accordion-button::after {
     margin-left: 10px;
+}
+
+.links-subMenu,
+.linkProductos {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
 }
 
 .links-subMenu:hover,
@@ -119,7 +130,33 @@ header li a,
 
 @media (min-width: 992px) {
 
-    
+    .linkProductos {
+        display: block;
+        padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
+        font-size: var(--bs-nav-link-font-size);
+        font-weight: var(--bs-nav-link-font-weight);
+        color: var(--bs-nav-link-color);
+        text-decoration: none;
+        transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+        .nav-link {
+            transition: none;
+        }
+    }
+
+    .nav-link:hover,
+    .nav-link:focus {
+        color: var(--bs-nav-link-hover-color);
+    }
+
+    .nav-link.disabled {
+        color: var(--bs-nav-link-disabled-color);
+        pointer-events: none;
+        cursor: default;
+    }
+
     header li a {
         font-family: 'Nunito';
         font-style: normal;
@@ -142,6 +179,9 @@ header li a,
 
 @media (max-width: 992px) {
 
+    .header-productos-mobile {
+        margin-top: 1rem;
+    }
 
     .redesNav {
         display: none;
@@ -155,7 +195,6 @@ header li a,
         font-size: 16px !important;
         line-height: 19px;
         width: 80px;
-        text-align: center;
     }
 
 
@@ -168,9 +207,6 @@ header li a,
         display: none;
     }
 
-    .menuNav {
-        margin-top: 1rem;
-    }
 
     .menuNav a {
         margin-top: 1rem;

@@ -10,12 +10,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato&family=Nunito:wght@500&display=swap" rel="stylesheet">
-    <title>Aiush</title>
+    <link rel="shortcut icon" href="../assets/logoaiush1.png">
+    <title>Aiush - Home</title>
 </head>
 
 <body onload="init()">
 
-    <header class="sticky-top">
+    <header class="fixed-top">
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid d-flex justify-space-between">
 
@@ -36,7 +37,7 @@
 
                     <div class="redesNav">
 
-                        <a href="https://www.facebook.com/" target="_blank">
+                        <a href="https://www.facebook.com/aiushdesign" target="_blank">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-facebook"
                                 viewBox="0 0 16 16">
                                 <path
@@ -44,7 +45,7 @@
                             </svg>
                         </a>
 
-                        <a href="https://www.instagram.com/" target="_blank">
+                        <a href="https://www.instagram.com/aiushdesign/" target="_blank">
                             <div class="contenedorInstagram">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-instagram"
                                     viewBox="0 0 16 16">
@@ -60,11 +61,11 @@
                     <ul class="navbar-nav ms-auto menuNav">
 
                         <li class="nav-item">
-                            <a class="nav-link" href="./">Home</a>
+                            <a class="nav-link seccionesMobile" href="./">Home</a>
                         </li>
 
                         <li class="nav-item header-productos-desktop">
-                            <a class="nav-link" href="secciones/productos.html">Productos</a>
+                            <a class="menuProductos links-subMenu nav-link linkProductos">Productos</a>
                         </li>
 
                         <li class="nav-item header-productos-mobile">
@@ -82,6 +83,10 @@
                                     <div id="collapseTwo" class="accordion-collapse collapse"
                                         aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                                         <ul>
+                                            <li>
+                                                <p class="menuProductos links-subMenu">Todos los productos</p>
+                                            </li>
+
                                             <li>
                                                 <p class="menuProductos links-subMenu">Agendas</p>
                                             </li>
@@ -118,11 +123,11 @@
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="secciones/nosotros.html">Nosotros</a>
+                            <a class="nav-link seccionesMobile" href="secciones/nosotros.html">Nosotros</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="secciones/contacto.html">Contacto</a>
+                            <a class="nav-link seccionesMobile" href="secciones/contacto.html">Contacto</a>
                         </li>
 
                     </ul>
@@ -208,7 +213,9 @@
     </a>
 
     <footer>
+        
         <a href="index.html">© AIUSH</a>
+        
     </footer>
 
     <script src="js/bootstrap.min.js"></script>

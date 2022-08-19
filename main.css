@@ -5,7 +5,8 @@ body {
   height: 100vh; }
 
 main {
-  min-height: 100%; }
+  min-height: 100%;
+  margin-top: 62px; }
 
 .links-subMenu {
   cursor: pointer; }
@@ -8420,6 +8421,9 @@ header {
   background-color: white;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1); }
 
+.navbar-toggler {
+  padding: 0; }
+
 #navbarNav {
   font-size: 1.2rem; }
 
@@ -8456,6 +8460,14 @@ header li a,
 .accordion-button:not(.collapsed)::after,
 .accordion-button::after {
   margin-left: 10px; }
+
+.links-subMenu,
+.linkProductos {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px; }
 
 .links-subMenu:hover,
 .nav-link:hover {
@@ -8506,6 +8518,26 @@ header li a,
   margin-left: 70px; }
 
 @media (min-width: 992px) {
+  .linkProductos {
+    display: block;
+    padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
+    font-size: var(--bs-nav-link-font-size);
+    font-weight: var(--bs-nav-link-font-weight);
+    color: var(--bs-nav-link-color);
+    text-decoration: none;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out; } }
+
+@media (min-width: 992px) and (prefers-reduced-motion: reduce) {
+  .nav-link {
+    transition: none; } }
+
+@media (min-width: 992px) {
+  .nav-link:hover, .nav-link:focus {
+    color: var(--bs-nav-link-hover-color); }
+  .nav-link.disabled {
+    color: var(--bs-nav-link-disabled-color);
+    pointer-events: none;
+    cursor: default; }
   header li a {
     font-family: 'Nunito';
     font-style: normal;
@@ -8520,6 +8552,8 @@ header li a,
     width: 40%; } }
 
 @media (max-width: 992px) {
+  .header-productos-mobile {
+    margin-top: 1rem; }
   .redesNav {
     display: none; }
   header li a,
@@ -8529,15 +8563,12 @@ header li a,
     font-weight: 400;
     font-size: 16px !important;
     line-height: 19px;
-    width: 80px;
-    text-align: center; }
+    width: 80px; }
   header li a {
     margin-top: auto;
     margin-bottom: auto; }
   .header-productos-desktop {
     display: none; }
-  .menuNav {
-    margin-top: 1rem; }
   .menuNav a {
     margin-top: 1rem; }
   .accordion-button {
@@ -8646,6 +8677,9 @@ form .form-control {
 
 #seccionesProductos {
   flex-direction: column; }
+
+.seccionesMobile {
+  margin-left: 8px; }
 
 .cardProducto .img-fluid {
   cursor: pointer; }
