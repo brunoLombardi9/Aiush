@@ -26,8 +26,8 @@
     flex-direction: column;
 }
 
-.seccionesMobile{
-margin-left: 8px;
+.seccionesMobile {
+    margin-left: 8px;
 }
 
 
@@ -38,6 +38,7 @@ margin-left: 8px;
 .contenedorProductos {
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 10px;
 }
 
 .cardProducto {
@@ -46,6 +47,10 @@ margin-left: 8px;
 
 .cardProducto:hover {
     transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.modal-footer button {
+    width: 150px;
 }
 
 

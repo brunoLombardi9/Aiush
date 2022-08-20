@@ -216,9 +216,9 @@
         ]
     },
     {
-        "nombre": "Lapices plantables",
+        "nombre": "Lápices plantables",
         "id": 23,
-        "categoria": "Lapices plantables",
+        "categoria": "Lápices plantables",
         "imagenes": [
             "assets/Lapices/Lapices-04.webp",
             "assets/Lapices/Lapices-05.webp",

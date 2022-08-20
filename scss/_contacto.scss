@@ -29,8 +29,6 @@ form .form-control {
 .mainContacto {
     margin-left: 0;
     margin-right: 0;
-    // background-image: url("../assets/landscape-shot-purple-scenery-with-mountain-orange-sky-background_181624-9663.webp");
-    // background-size: contain;
 }
 
 .contenedorRedesContacto {
@@ -66,20 +64,32 @@ form .form-control {
 
 @media (max-width: 768px) {
 
-    .botonFormulario {
+    #formulario{
+        background-color: $colorGeneral;
+        margin-bottom: 2rem;
+    }
+
+    .botonFormulario{
+        background-color: white;
+        color: black;
         border-radius: 100px;
         width: 80%;
         margin-top: auto;
         margin-bottom: auto;
     }
-
-
-    #contacto {
+    
+    .botonFormulario:hover{
+        background-color: white;
+        color: $colorGeneral;
+    }
+    
+    #contacto{
         padding-top: 40px;
         margin-top: 2rem;
+        display: flex;
+        justify-content: center;
+        padding-right: 20px;
+        padding-left: 20px;
     }
 
-    // .mainContacto{
-    //     padding-top: 65px;
-    // }
 }

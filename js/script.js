@@ -228,7 +228,7 @@ function descripcionProducto(producto) {
     let descripciones;
 
     switch (producto.categoria) {
-        case "Lapices plantables":
+        case "Lápices plantables":
             descripciones = productos[0].descripciones.lapicesPlantables;
             break;
         case "Libretas":
@@ -251,6 +251,7 @@ function descripcionProducto(producto) {
     descripciones.forEach(texto => {
         const parrafo = document.createElement('p');
         parrafo.innerText = texto;
+        parrafo.classList.add('mt-auto', "mb-auto");
 
         contenidoProducto.appendChild(parrafo);
     });

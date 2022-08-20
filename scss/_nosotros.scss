@@ -82,67 +82,10 @@
 
 @media only screen and (max-width: 992px) {
     /*HOME*/
-    .heroCont {
-        display: grid;
-        grid-template-columns: none;
-        margin-left: 3%;
-        margin-right: 10%;
-    }
-    .hero h2 {
-        font-size: 250%;
-        margin-top: 2.5em;
-    }
-    .hero p {
-        font-size: 100%;
-        margin-right: 20%;
-    }
-    .cont img {
-        width: 60%;
-        height: auto;
-        margin-left: 40%;
-        margin-top: 0%;
-    }
 
-    .caracter h3 {
-        font-size: 80%;
-        text-align: center;
-    }
-    .car img {
-        width: 50%;
-        height: auto;
-        margin-bottom: 3%;
-    }
-    .car {
-        margin-top: 2em;
-        margin-bottom: 2em;
-        display: grid;
-        grid-template-columns: none ;
-        align-items: flex-start;
-        grid-gap: 0%;
-    }    
+.sobreNos{
+margin-top: 60px;
+}
 
-    .prod h4 {
-        font-size: 120%;
-        text-transform: none;
-    }
-    .productos {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        margin-bottom: 15%;
-    }
-    .desText p {
 
-        font-size: 110%;
-        font-weight: 300;
-
-    }
-
-    .boton__secundario{
-        font-size: 80%;
-        margin-bottom: 2em;
-    }
-
-    .carousel-item {
-        font-size: 90%;
-    }
 }
