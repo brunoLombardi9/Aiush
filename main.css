@@ -8594,9 +8594,9 @@ footer a:hover {
 
 .caracter {
   margin: 5% 5%;
-  align-items: flex-start;
   display: grid;
-  grid-template-columns: 33% 33% 33%; }
+  grid-template-columns: 33% 33% 33%;
+  grid-gap: 1.5%; }
 
 .car {
   width: 100%;
@@ -8614,6 +8614,8 @@ footer a:hover {
   color: #0e0e0e; }
 
 .car img {
+  width: 90%;
+  height: auto;
   margin: auto; }
 
 .prod h4, .prod .h4 {
@@ -8632,22 +8634,35 @@ footer a:hover {
   align-items: flex-end;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-auto-rows: 250px;
   grid-gap: 3%; }
 
 .destacados {
-  text-align: center; }
+  position: relative;
+  display: inline-block; }
 
-.destacados a {
+.desText {
+  position: absolute;
+  top: 83%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 7% 50%;
+  background: rgba(0, 0, 0, 0.1);
+  color: #ffffff; }
+
+.desText p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   text-decoration: none;
   font-family: "Nunito", sans-serif;
-  font-size: 125%;
-  font-weight: 300;
+  font-size: 130%;
+  font-weight: 600;
   font-style: normal;
-  color: #f1f1f1; }
+  margin-bottom: 0; }
 
 .destacados img {
-  width: 50%;
+  width: 100%;
   height: auto; }
 
 .boton__secundario {
@@ -8714,11 +8729,10 @@ footer a:hover {
   font-weight: 900;
   font-style: normal;
   color: #0e0e0e;
-  text-align: left;
   text-align: center; }
 
 .videoNos img {
-  width: 75%;
+  width: 85%;
   height: auto;
   margin-left: 5%;
   margin-right: 5%; }
@@ -8761,25 +8775,27 @@ footer a:hover {
   /*HOME*/
   .heroCont {
     display: grid;
-    grid-template-columns: 65% 35%;
-    margin-left: 3%; }
+    grid-template-columns: none;
+    margin-left: 3%;
+    margin-right: 10%; }
   .hero h2, .hero .h2 {
     font-size: 250%;
     margin-top: 2.5em; }
   .hero p {
-    font-size: 100%; }
-  .heroCont img {
-    width: 150%;
+    font-size: 100%;
+    margin-right: 20%; }
+  .cont img {
+    width: 60%;
     height: auto;
-    margin-top: 21em;
-    margin-left: -60%; }
+    margin-left: 40%;
+    margin-top: 0%; }
   .caracter h3, .caracter .h3 {
     font-size: 80%;
     text-align: center; }
   .car img {
-    width: 70%;
+    width: 50%;
     height: auto;
-    margin-bottom: 1%; }
+    margin-bottom: 3%; }
   .car {
     margin-top: 2em;
     margin-bottom: 2em;
@@ -8793,13 +8809,13 @@ footer a:hover {
   .productos {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    margin-bottom: 5em; }
-  .destacados {
-    padding: 1em 2em; }
-  .destacados a {
-    font-size: 100%; }
+    margin-bottom: 15%; }
+  .desText p {
+    font-size: 110%;
+    font-weight: 300; }
   .boton__secundario {
-    font-size: 80%; }
+    font-size: 80%;
+    margin-bottom: 2em; }
   .carousel-item {
     font-size: 90%; }
   /*NOSOTROS*/

@@ -45,9 +45,9 @@
 
 .caracter {
     margin: 5% 5%;
-    align-items: flex-start;
     display: grid;
     grid-template-columns: 33% 33% 33%;
+    grid-gap: 1.5%;
 }
 .car {
     width: 100%;
@@ -55,7 +55,7 @@
     display: grid;
     grid-template-columns: 20% 70%;
     align-items: center;
-    grid-gap: 3%
+    grid-gap: 3%;
 }
 .caracter h3 {
     font-family: $font;
@@ -65,6 +65,8 @@
     color: #0e0e0e;
 }
 .car img {
+    width: 90%;
+    height: auto;
     margin:auto;
 }
 
@@ -84,24 +86,35 @@
     align-items: flex-end;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: 250px;
     grid-gap: 3%;
 }
 .destacados {
-    // padding: 2em 3em;
-    // background-color: #a1a1a1;
-    text-align: center;
+    position: relative;
+    display: inline-block;    
 }
-.destacados a {
+.desText {
+    position: absolute;
+    top: 83%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 7% 50%;
+    background: rgba(0, 0, 0, 0.1);
+    color: #ffffff;
+}
+.desText p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     text-decoration:none;
     font-family: $fontTitles;
-	font-size: 125%;
-	font-weight: 300;
+	font-size: 130%;
+	font-weight: 600;
 	font-style: normal;
-    color: #f1f1f1;
+    margin-bottom: 0; 
 }
 .destacados img {
-    width: 50%;
+    width: 100%;
     height: auto;
 }
 
@@ -174,12 +187,10 @@
 	font-weight: 900;
 	font-style: normal;
     color: #0e0e0e;
-    text-align: left;
-    // margin-top: 5%;
     text-align: center;
 }
 .videoNos img {
-    width: 75%;
+    width: 85%;
     height: auto;
     margin-left: 5%;
     margin-right: 5%;
@@ -228,8 +239,9 @@
     /*HOME*/
     .heroCont {
         display: grid;
-        grid-template-columns: 65% 35%;
+        grid-template-columns: none;
         margin-left: 3%;
+        margin-right: 10%;
     }
     .hero h2 {
         font-size: 250%;
@@ -237,12 +249,13 @@
     }
     .hero p {
         font-size: 100%;
+        margin-right: 20%;
     }
-    .heroCont img {
-        width: 150%;
+    .cont img {
+        width: 60%;
         height: auto;
-        margin-top: 21em;
-        margin-left: -60%;
+        margin-left: 40%;
+        margin-top: 0%;
     }
 
     .caracter h3 {
@@ -250,18 +263,17 @@
         text-align: center;
     }
     .car img {
-        width: 70%;
+        width: 50%;
         height: auto;
-        margin-bottom: 1%;
+        margin-bottom: 3%;
     }
-     .car {
+    .car {
         margin-top: 2em;
         margin-bottom: 2em;
         display: grid;
         grid-template-columns: none ;
         align-items: flex-start;
         grid-gap: 0%;
-    
     }    
 
     .prod h4 {
@@ -271,17 +283,18 @@
     .productos {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        margin-bottom: 5em;
+        margin-bottom: 15%;
     }
-    .destacados {
-        padding: 1em 2em;
-    }
-    .destacados a {
-        font-size: 100%;
+    .desText p {
+
+        font-size: 110%;
+        font-weight: 300;
+
     }
 
     .boton__secundario{
         font-size: 80%;
+        margin-bottom: 2em;
     }
 
     .carousel-item {
