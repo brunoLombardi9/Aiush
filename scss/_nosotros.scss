@@ -92,13 +92,36 @@
 
 @media (max-width: 992px) {
 
+    .sobreNos{
+        margin-top: 10%;
+    }
+    .sobreNos h5 {
+        font-size: 170%;
+    }
+    .sobreNos p {
+        font-size: 100%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .videoNos h5 {
+        font-size: 150%;
+    }
+    
+    .trabNos h5 {
+        font-size: 150%;
+    }
     .materiales {
+        display: grid;
         grid-template-columns: repeat(1, 1fr);
         margin: 5% 10% 30%;
     }
-
-    .sobreNos {
-        margin-top: 60px;
+    .mat img {
+        width: 60%;
+        height: auto;
+    }
+    .mat p {
+        font-size: 100%;
     }
 
 
