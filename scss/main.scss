@@ -10,27 +10,23 @@
 // ESTILOS HOME-----------------------
 .hero {
     background-color: #A5ADD4;
-    // background-image: url("../assets/logoaiush1.png");
     height: 630px;
-  
-    // background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-                  
-      /* box modeling */
-      padding: 50px 0px;
-      margin-bottom: 0px;
+    padding: 50px 0px;
+}
+.heroCont {
+    display: grid;
+    grid-template-columns: 35% 60%;
+    margin-left: 5%;
 }
 .hero h2 {
     font-family: $fontTitles;
 	font-size: 400%;
 	font-weight: 900;
 	font-style: normal;
-    color: #f1f1f1;
+    color: #ffffff;
     text-align: left;
     margin-left: 5%;
-    margin-top: 2em;
+    margin-top: 3em;
     text-transform: uppercase;
 }
 .hero p {
@@ -38,22 +34,30 @@
     font-size: 125%;
     font-weight: 300;
     font-style: normal;
-    color: #f1f1f1;
+    color: #ffffff;
     text-align: left;
     margin-left: 5%;
-    margin-right: 70%;
+}
+.heroCont img {
+    width: 60%;
+    height: auto;
+    margin-top: 10%;
+    margin-left: 25%;
 }
 
 .caracter {
-    margin: 3% 5% 0%;
-    align-items: flex-start;
+    margin: 5% 5%;
     display: grid;
     grid-template-columns: 33% 33% 33%;
+    grid-gap: 1.5%;
 }
 .car {
     width: 100%;
     height: 100%;
-    text-align: center;
+    display: grid;
+    grid-template-columns: 20% 70%;
+    align-items: center;
+    grid-gap: 3%;
 }
 .caracter h3 {
     font-family: $font;
@@ -61,6 +65,11 @@
 	font-weight: 400;
 	font-style: normal;
     color: #0e0e0e;
+}
+.car img {
+    width: 90%;
+    height: auto;
+    margin:auto;
 }
 
 .prod h4 {
@@ -79,21 +88,36 @@
     align-items: flex-end;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: 250px;
     grid-gap: 3%;
 }
 .destacados {
-    padding: 2em 3em;
-    background-color: #a1a1a1;
-    text-align: center;
+    position: relative;
+    display: inline-block;    
 }
-.destacados a {
+.desText {
+    position: absolute;
+    top: 83%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 7% 50%;
+    background: rgba(0, 0, 0, 0.1);
+    color: #ffffff;
+}
+.desText p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     text-decoration:none;
     font-family: $fontTitles;
-	font-size: 125%;
-	font-weight: 300;
+	font-size: 130%;
+	font-weight: 600;
 	font-style: normal;
-    color: #f1f1f1;
+    margin-bottom: 0; 
+}
+.destacados img {
+    width: 100%;
+    height: auto;
 }
 
 .boton__secundario{
@@ -114,22 +138,20 @@
     color: #A5ADD4;
 }
 
-.carrusel {
-    margin: 3% 5% 5%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-.reseña {
-    margin: 1% 3%;
+.carousel-item {
     font-family: $font;
+    font-style: italic;
+    font-size: 100%;
     text-align: center;
+}
+.carousel-item p {
+    padding: 3% 15%;
 }
 
 
 // ESTILOS NOS-----------------------
 .sobreNos{
-    margin-top: 0%;
+    margin-top: 3%;
 }
 .sobreNos img {
     width: 100%;
@@ -157,17 +179,28 @@
     margin-right: 20%;
 }
 
+.videoNos {
+    margin-top: 10%;
+    text-align: center;
+}
 .videoNos h5 {
     font-family: $fontTitles;
 	font-size: 250%;
 	font-weight: 900;
 	font-style: normal;
     color: #0e0e0e;
-    text-align: left;
-    margin-top: 5%;
     text-align: center;
 }
+.videoNos img {
+    width: 85%;
+    height: auto;
+    margin-left: 5%;
+    margin-right: 5%;
+}
 
+.trabNos {
+    margin-top: 10%;
+}
 .trabNos h5 {
     font-family: $fontTitles;
 	font-size: 200%;
@@ -175,7 +208,6 @@
 	font-style: normal;
     color: #0e0e0e;
     text-align: left;
-    margin-top: 10%;
     margin-left: 5%;
 }
 .materiales {
@@ -191,6 +223,8 @@
 }
 .mat img {
     margin-bottom: 5%;
+    width: 85%;
+    height: auto;
 }
 .mat p {
     font-family: $font;
@@ -205,19 +239,44 @@
 /*VISTA MOBILE*/
 @media only screen and (max-width: 992px) {
     /*HOME*/
+    .heroCont {
+        display: grid;
+        grid-template-columns: none;
+        margin-left: 3%;
+        margin-right: 10%;
+    }
     .hero h2 {
         font-size: 250%;
-        margin-top: 4em;
+        margin-top: 2.5em;
     }
     .hero p {
         font-size: 100%;
-        margin-right: 30%;
+        margin-right: 20%;
+    }
+    .cont img {
+        width: 60%;
+        height: auto;
+        margin-left: 40%;
+        margin-top: 0%;
     }
 
     .caracter h3 {
-        font-size: 100%;
-        margin-top: 2em;
+        font-size: 80%;
+        text-align: center;
     }
+    .car img {
+        width: 50%;
+        height: auto;
+        margin-bottom: 3%;
+    }
+    .car {
+        margin-top: 2em;
+        margin-bottom: 2em;
+        display: grid;
+        grid-template-columns: none ;
+        align-items: flex-start;
+        grid-gap: 0%;
+    }    
 
     .prod h4 {
         font-size: 120%;
@@ -226,22 +285,29 @@
     .productos {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        margin-bottom: 5em;
+        margin-bottom: 15%;
     }
-    .destacados {
-        padding: 1em 2em;
-    }
-    .destacados a {
-        font-size: 100%;
+    .desText p {
+
+        font-size: 110%;
+        font-weight: 300;
+
     }
 
-    .carrusel {
-        margin-top: 2em;
+    .boton__secundario{
+        font-size: 80%;
+        margin-bottom: 2em;
     }
 
+    .carousel-item {
+        font-size: 90%;
+    }
+
+ 
     /*NOSOTROS*/
     .sobreNos{
         margin-top: 70px;
+        margin-top: 10%;
     }
     .sobreNos h5 {
         font-size: 170%;
