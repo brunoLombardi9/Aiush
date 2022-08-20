@@ -1,20 +1,23 @@
-.sobreNos{
+.sobreNos {
     margin-top: 3%;
 }
+
 .sobreNos img {
     width: 100%;
     height: auto;
 }
+
 .sobreNos h5 {
     font-family: $fontTitles;
-	font-size: 250%;
-	font-weight: 900;
-	font-style: normal;
+    font-size: 250%;
+    font-weight: 900;
+    font-style: normal;
     color: #0e0e0e;
     text-align: left;
     margin-left: 5%;
     margin-top: 5%;
 }
+
 .sobreNos p {
     font-family: $font;
     font-size: 105%;
@@ -31,14 +34,16 @@
     margin-top: 10%;
     text-align: center;
 }
+
 .videoNos h5 {
     font-family: $fontTitles;
-	font-size: 250%;
-	font-weight: 900;
-	font-style: normal;
+    font-size: 250%;
+    font-weight: 900;
+    font-style: normal;
     color: #0e0e0e;
     text-align: center;
 }
+
 .videoNos img {
     width: 85%;
     height: auto;
@@ -49,43 +54,52 @@
 .trabNos {
     margin-top: 10%;
 }
+
 .trabNos h5 {
     font-family: $fontTitles;
-	font-size: 200%;
-	font-weight: 900;
-	font-style: normal;
+    font-size: 200%;
+    font-weight: 900;
+    font-style: normal;
     color: #0e0e0e;
     text-align: left;
     margin-left: 5%;
 }
+
 .materiales {
     margin: 5%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 3%;
 }
+
 .mat {
     margin-left: 5%;
     margin-right: 5%;
     text-align: center;
 }
+
 .mat img {
     margin-bottom: 5%;
     width: 85%;
     height: auto;
 }
+
 .mat p {
     font-family: $font;
     font-size: 105%;
     color: #0e0e0e;
 }
 
-@media only screen and (max-width: 992px) {
-    /*HOME*/
+@media (max-width: 992px) {
 
-.sobreNos{
-margin-top: 60px;
-}
+    .materiales {
+        grid-template-columns: repeat(1, 1fr);
+        margin: 5% 10% 30%;
+    }
+
+    .sobreNos {
+        margin-top: 60px;
+    }
 
 
 }

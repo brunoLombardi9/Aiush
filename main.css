@@ -8834,8 +8834,10 @@ header li a,
   font-size: 105%;
   color: #0e0e0e; }
 
-@media only screen and (max-width: 992px) {
-  /*HOME*/
+@media (max-width: 992px) {
+  .materiales {
+    grid-template-columns: repeat(1, 1fr);
+    margin: 5% 10% 30%; }
   .sobreNos {
     margin-top: 60px; } }
 
