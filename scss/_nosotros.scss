@@ -1,0 +1,148 @@
+.sobreNos{
+    margin-top: 3%;
+}
+.sobreNos img {
+    width: 100%;
+    height: auto;
+}
+.sobreNos h5 {
+    font-family: $fontTitles;
+	font-size: 250%;
+	font-weight: 900;
+	font-style: normal;
+    color: #0e0e0e;
+    text-align: left;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+.sobreNos p {
+    font-family: $font;
+    font-size: 105%;
+    font-weight: 400;
+    font-style: normal;
+    color: #0e0e0e;
+    text-align: left;
+    margin-top: 1%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.videoNos {
+    margin-top: 10%;
+    text-align: center;
+}
+.videoNos h5 {
+    font-family: $fontTitles;
+	font-size: 250%;
+	font-weight: 900;
+	font-style: normal;
+    color: #0e0e0e;
+    text-align: center;
+}
+.videoNos img {
+    width: 85%;
+    height: auto;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.trabNos {
+    margin-top: 10%;
+}
+.trabNos h5 {
+    font-family: $fontTitles;
+	font-size: 200%;
+	font-weight: 900;
+	font-style: normal;
+    color: #0e0e0e;
+    text-align: left;
+    margin-left: 5%;
+}
+.materiales {
+    margin: 5%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 3%;
+}
+.mat {
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: center;
+}
+.mat img {
+    margin-bottom: 5%;
+    width: 85%;
+    height: auto;
+}
+.mat p {
+    font-family: $font;
+    font-size: 105%;
+    color: #0e0e0e;
+}
+
+@media only screen and (max-width: 992px) {
+    /*HOME*/
+    .heroCont {
+        display: grid;
+        grid-template-columns: none;
+        margin-left: 3%;
+        margin-right: 10%;
+    }
+    .hero h2 {
+        font-size: 250%;
+        margin-top: 2.5em;
+    }
+    .hero p {
+        font-size: 100%;
+        margin-right: 20%;
+    }
+    .cont img {
+        width: 60%;
+        height: auto;
+        margin-left: 40%;
+        margin-top: 0%;
+    }
+
+    .caracter h3 {
+        font-size: 80%;
+        text-align: center;
+    }
+    .car img {
+        width: 50%;
+        height: auto;
+        margin-bottom: 3%;
+    }
+    .car {
+        margin-top: 2em;
+        margin-bottom: 2em;
+        display: grid;
+        grid-template-columns: none ;
+        align-items: flex-start;
+        grid-gap: 0%;
+    }    
+
+    .prod h4 {
+        font-size: 120%;
+        text-transform: none;
+    }
+    .productos {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-bottom: 15%;
+    }
+    .desText p {
+
+        font-size: 110%;
+        font-weight: 300;
+
+    }
+
+    .boton__secundario{
+        font-size: 80%;
+        margin-bottom: 2em;
+    }
+
+    .carousel-item {
+        font-size: 90%;
+    }
+}
