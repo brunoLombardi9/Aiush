@@ -1,17 +1,65 @@
 footer {
     height: 15vh;
+    // background-image: url("../assets/Footer.png");
+    // background-size: contain;
     background-color: $colorGeneral;
     display: flex;
-    justify-content: end;
+    justify-content: space-between;
     align-items: center;
 }
 
-footer a,
-footer a:hover {
+.redesNavFooter {
+    width: 150px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 70px;
+}
+
+.redesNavFooter .facebookFooter {
+    background-color: $colorGeneral;
+    border-color: white;
     color: white;
-    margin-right: 20px;
+    height: 40px;
+    width: 40px;
+    border-radius: 100px;
+
+}
+
+.redesNavFooter .contenedorInstagramFooter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $colorGeneral;
+    background-color: white;
+    height: 40px;
+    width: 40px;
+    border-radius: 100px;
+}
+
+.redesNavFooter .instagramFooter {
+    color: white;
+    background-color: $colorGeneral;
+    height: 34px;
+    width: 34px;
+    border-radius: 100px;
+    border-color: white;
+    border-style: none;
+    border-style: hidden;
+}
+
+
+footer .marcaFooter,
+footer .marcaFooter:hover {
+    color: white;
     font-family: Nunito;
 }
+
+.marcaFooter a{
+    color: white;
+    margin-right: 20px;
+}
+
 
 @media (max-width: 992px) {
     footer {
@@ -20,7 +68,11 @@ footer a:hover {
 }
 
 @media (min-width: 992px) {
-    footer a {
+    footer .marcaFooter {
         margin-top: 50px;
+    }
+
+    .redesNavFooter{
+        display: none;
     }
 }

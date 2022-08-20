@@ -5,11 +5,11 @@
     border-radius: 1rem;
 }
 
-form .form-control{
+form .form-control {
     border: transparent;
     border-radius: 0;
     background-color: #ededef;
-  }
+}
 
 
 #contacto {
@@ -29,7 +29,8 @@ form .form-control{
 .mainContacto {
     margin-left: 0;
     margin-right: 0;
-
+    // background-image: url("../assets/landscape-shot-purple-scenery-with-mountain-orange-sky-background_181624-9663.webp");
+    // background-size: contain;
 }
 
 .contenedorRedesContacto {
@@ -37,40 +38,43 @@ form .form-control{
     width: 40%;
 }
 
-.whatsappContacto, .instagramContacto {
+.whatsappContacto,
+.instagramContacto {
     height: 28px;
     width: 28px;
     color: #9BC9A8;
 }
 
-.instagramContacto{
+.instagramContacto {
     color: #B174CE;
 }
 
-.contenedorWhatsappContacto, .contenedorInstagramContacto {
+.contenedorWhatsappContacto,
+.contenedorInstagramContacto {
     border-radius: 100px;
     background-color: white;
 }
 
-#formulario textarea, #formulario input{
+#formulario textarea,
+#formulario input {
     border-radius: 5px;
 }
 
-.botonFormulario{
+.botonFormulario {
     width: 70%;
 }
 
-@media (max-width: 768px){
+@media (max-width: 768px) {
 
-    .botonFormulario{
+    .botonFormulario {
         border-radius: 100px;
         width: 80%;
         margin-top: auto;
         margin-bottom: auto;
     }
-    
-    
-    #contacto{
+
+
+    #contacto {
         padding-top: 40px;
         margin-top: 2rem;
     }

@@ -8578,22 +8578,62 @@ footer {
   height: 15vh;
   background-color: #4F70A3;
   display: flex;
-  justify-content: end;
+  justify-content: space-between;
   align-items: center; }
 
-footer a,
-footer a:hover {
+.redesNavFooter {
+  width: 150px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: 70px; }
+
+.redesNavFooter .facebookFooter {
+  background-color: #4F70A3;
+  border-color: white;
   color: white;
-  margin-right: 20px;
+  height: 40px;
+  width: 40px;
+  border-radius: 100px; }
+
+.redesNavFooter .contenedorInstagramFooter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #4F70A3;
+  background-color: white;
+  height: 40px;
+  width: 40px;
+  border-radius: 100px; }
+
+.redesNavFooter .instagramFooter {
+  color: white;
+  background-color: #4F70A3;
+  height: 34px;
+  width: 34px;
+  border-radius: 100px;
+  border-color: white;
+  border-style: none;
+  border-style: hidden; }
+
+footer .marcaFooter,
+footer .marcaFooter:hover {
+  color: white;
   font-family: Nunito; }
+
+.marcaFooter a {
+  color: white;
+  margin-right: 20px; }
 
 @media (max-width: 992px) {
   footer {
     height: 10vh; } }
 
 @media (min-width: 992px) {
-  footer a {
-    margin-top: 50px; } }
+  footer .marcaFooter {
+    margin-top: 50px; }
+  .redesNavFooter {
+    display: none; } }
 
 #formulario {
   background-color: white;
@@ -8626,7 +8666,8 @@ form .form-control {
   background-color: white;
   width: 40%; }
 
-.whatsappContacto, .instagramContacto {
+.whatsappContacto,
+.instagramContacto {
   height: 28px;
   width: 28px;
   color: #9BC9A8; }
@@ -8634,11 +8675,13 @@ form .form-control {
 .instagramContacto {
   color: #B174CE; }
 
-.contenedorWhatsappContacto, .contenedorInstagramContacto {
+.contenedorWhatsappContacto,
+.contenedorInstagramContacto {
   border-radius: 100px;
   background-color: white; }
 
-#formulario textarea, #formulario input {
+#formulario textarea,
+#formulario input {
   border-radius: 5px; }
 
 .botonFormulario {

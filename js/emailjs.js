@@ -35,6 +35,21 @@ document.querySelector('#formulario')
 
 
       }, (err) => {
+
+        const postFormulario = document.createElement('h1');
+        postFormulario.innerText = "Algo salio mal, intenta en otro momento.";
+        postFormulario.classList.add('text-center');
+        mainContacto.appendChild(postFormulario);
+
+        const enlaceIndex = document.createElement('a');
+        enlaceIndex.href = '../index.html';
+        mainContacto.appendChild(enlaceIndex);
+
+        const botonVolver = document.createElement('button');
+        botonVolver.classList.add('btn', 'btn-primary', 'botonVolver');
+        botonVolver.innerText = "Volver a Home";
+        enlaceIndex.appendChild(botonVolver);
+
         console.log(JSON.stringify(err));
       });
   });
